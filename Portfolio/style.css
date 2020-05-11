@@ -1,0 +1,257 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.nav{
+  width: 100%;
+  height: auto;
+  padding: 10px 5px;
+  box-sizing: border-box;
+  box-shadow: 0 0 8px grey;
+  background-color: #1F2738;
+}
+.logo{
+  color: white;
+  font-size: 28px;
+}
+.menu{
+  position: absolute;
+  right: 3%;
+  top: 0%;
+  font-size: 40px;
+  color: white;
+}
+ul {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+li{
+  padding: 0;
+  margin: 0;
+  display: inline;
+}
+ul li a {
+  padding: 5px 10px;
+  text-decoration: none;
+  color: white;
+  margin-top: 5px;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+ul li a:hover{
+  border-bottom: 2px solid white;
+  padding: 5px 8px;
+  font-size: 15px;
+  color: #89ABE3;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.sec1{
+  width: 100%;
+  background-color: #FFFFFF;
+  height: auto;
+  padding: 10px 10px 10px 10px;
+  box-sizing: border-box;
+}
+.myimg{
+  height: 130px;
+  float: left;
+  margin-right: 5px;
+  width: 30%;
+}
+.a-content{
+  box-sizing: border-box;
+  width: 100%;
+  text-align: justify;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.sec2{
+  height:auto;
+  background-color:#FFFFFF;
+  padding: 10px 10px 20px 10px;
+}
+.sec3{
+    width: 100%;
+    background-color: #FFFFFF;
+    height: auto;
+    padding: 10px 10px 10px 10px;
+    box-sizing: border-box;
+}
+.sec4{
+  width: 100%;
+  background-color: #FFFFFF;
+  height: auto;
+  padding: 10px 10px 20px 10px;
+  box-sizing:border-box;
+}
+ .Heading{
+   color: #009965;
+  text-align: center;
+  margin: 0 0 10px 0;
+}
+.f-label{
+  font-weight: bold;
+  color: #1F2738;
+  margin-bottom: 8px;
+}
+#email{
+  width: 100%;
+  box-sizing: border-box;
+  height: 45px;
+  outline: none;
+  padding-left: 10px;
+  border: 2px solid #1F2738;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+#msg{
+  width: 100%;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100px;
+  outline: none;
+  padding-left: 10px;
+  border: 2px solid #1F2738;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.Send{
+  background: #009965;
+  display: block;
+  text-align: center;
+  padding: 12px 10px;
+  margin: auto;
+  border: 0;
+  box-shadow: 0 0 5px grey;
+  border-radius: 8px;
+  color: white;
+  outline: none;
+  font-size: 18px;
+}
+.c-align{
+  width: 90%;
+  margin: 0 5%;
+  box-sizing: border-box;
+}
+.c-label{
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.c-labels, .c-texts{
+  display: inline-block;
+}
+.c-labels{
+  width:34%;
+  box-sizing: border-box;
+}
+.c-texts{
+  width: 58%;
+  margin-left: 15px;
+  box-sizing: border-box;
+}
+.c-text{
+  margin-bottom: 10px;
+  display: block;
+  font-size: 16px;
+  margin-left: 5px;
+}
+.clear{
+  clear: both;
+  content: "";
+  display: block;
+}
+.P-main{
+  display: inline-block;
+}
+.img1{
+  border: 2px solid white;
+  box-shadow: 0 0 5px grey;
+  margin-left: 10%;
+  width: 80%;
+  height: 200px;
+}
+.see-more1, .see-less1{
+  display: block;
+  margin-top: 20px;
+  text-align: right;
+  font-style: 16px;
+  outline: none;
+  font-weight: bold;
+  text-decoration: none;
+  color: #1F2738;
+}
+.m-skill{
+  display: block;
+  height: 5px;
+  width: 100%;
+  border-radius: 4px;
+  background-color: #1F2738;
+  box-shadow: 0 0 5px grey;
+  margin: 10px auto;
+}
+
+#skills-sec{
+  margin-top: 15px;
+}
+.h-skills{
+  margin: 10px auto;
+}
+.h-skills2{
+  margin: 20px auto;
+}
+.html{
+  display: block;
+  height: 5px;
+  width: 80%;
+  background-color: #009965;
+}
+.css {
+  display: block;
+  height: 5px;
+  width: 65%;
+  background-color: #009965;
+}
+.jscript {
+  display: block;
+  height: 5px;
+  width: 45%;
+  background-color: #009965;
+}
+.figma{
+  display: block;
+  height: 5px;
+  width: 85%;
+  background-color: #009965;
+}
+.c-draw{
+  display: block;
+  height: 5px;
+  width: 90%;
+  background-color: #009965;
+}
+.p-shop{
+  display: block;
+  height: 5px;
+  width: 70%;
+  background-color: #009965;
+}
+.cpp{
+  display: block;
+  height: 5px;
+  width: 60%;
+  background-color: #009965;
+}
+.illus{
+  display: block;
+  height: 5px;
+  width: 55%;
+  background-color: #009965;
+}
