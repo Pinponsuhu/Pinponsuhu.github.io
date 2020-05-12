@@ -63,9 +63,8 @@ ul li a:hover{
 .a-content{
   box-sizing: border-box;
   width: 100%;
-  text-align: justify;
+  text-align: left;
   font-size: 16px;
-  letter-spacing: 1px;
 }
 .sec2{
   height:auto;
@@ -256,4 +255,13 @@ ul li a:hover{
   height: 6px;
   width: 55%;
   background-color: #009965;
+}
+@media only screen and (min-width: 768px) {
+  .logo{
+    font-size: 34px;
+  }
+  .menu{
+    display: none;
+  }
+  
 }
