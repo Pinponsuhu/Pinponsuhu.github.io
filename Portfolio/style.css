@@ -22,9 +22,8 @@
   color: white;
 }
 ul {
-  width: 100%;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  width: 62%;
+  margin:10px 19%;
   box-sizing: border-box;
 }
 li{
@@ -188,9 +187,12 @@ ul li a:hover{
   text-decoration: none;
   color: #1F2738;
 }
+.skill{
+  color: #1F2738;
+}
 .m-skill{
   display: block;
-  height: 5px;
+  height: 6px;
   width: 100%;
   border-radius: 4px;
   background-color: #1F2738;
@@ -209,49 +211,49 @@ ul li a:hover{
 }
 .html{
   display: block;
-  height: 5px;
+  height: 6px;
   width: 80%;
   background-color: #009965;
 }
 .css {
   display: block;
-  height: 5px;
+  height: 6px;
   width: 65%;
   background-color: #009965;
 }
 .jscript {
   display: block;
-  height: 5px;
+  height: 6px;
   width: 45%;
   background-color: #009965;
 }
 .figma{
   display: block;
-  height: 5px;
+  height: 6px;
   width: 85%;
   background-color: #009965;
 }
 .c-draw{
   display: block;
-  height: 5px;
+  height: 6px;
   width: 90%;
   background-color: #009965;
 }
 .p-shop{
   display: block;
-  height: 5px;
+  height: 6px;
   width: 70%;
   background-color: #009965;
 }
 .cpp{
   display: block;
-  height: 5px;
+  height: 6px;
   width: 60%;
   background-color: #009965;
 }
 .illus{
   display: block;
-  height: 5px;
+  height: 6px;
   width: 55%;
   background-color: #009965;
 }

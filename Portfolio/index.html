@@ -20,13 +20,12 @@
     <span class="menu" id="show" onclick="showNav()">&equiv;</span>
     <span class="menu" id="hide" onclick="hideNav()">x</span>
     <ul id="navBar">
-      <li><a href="#">About</a></li>
-         <li><a href="#">Contact</a></li>
-    <li><a href="#">Projects</a></li>
-       <li><a href="#" onclick="fbk()">Feedback</a></li>
+      <li><a href="#sec1">About</a></li>
+         <li><a href="#sec2">Projects</a></li>
+    <li><a href="#sec3">Contacts</a></li>
   </ul>
   </div>
-  <div class="sec1">
+  <div class="sec1" id="sec1">
     <h2 class="Heading">About</h2>
     <img class="myimg" src="aboutimg.jpg" alt="" />
     <p class="a-content"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In vitae turpis massa sed elementum tempus egestas sed. Blandit massa enim nec dui nunc mattis enim ut. Leo a diam sollicitudin tempor id. Vulputat</p>
@@ -69,7 +68,7 @@
     <a class="see-more1" id="see-more1" href="#" onclick="seeMore1()">See more</a>
       <a class="see-less1" id="see-less1" href="#" onclick="seeLess1()">See less</a>
   </div>
-  <div class="sec2">
+  <div class="sec2" id="sec2">
     <h2 class="Heading">Projects</h2>
     <div class="P-main">
       <div class="img">
@@ -77,7 +76,7 @@
       </div>
     </div>
   </div>
-  <div class="sec3">
+  <div class="sec3" id="sec3">
     <h2 class="Heading">Contact</h2>
     <div class="c-align">
     <div class="c-labels">
@@ -99,14 +98,6 @@
         
       </div>
       </div>
-  </div>
-  <div class="sec4" id="sec4">
-    <h2 class="Heading">Feedback</h2>
-    <label class="f-label" >Email</label><br />
-    <input type="email" name="email" id="email" value="" placeholder="Something@email.com"/><br />
-    <label class="f-label">Message</label><br />
-    <input type="text" name="msg" id="msg" value="" placeholder="Write message"/>
-    <button class="Send" type="submit">Send message</button>
   </div>
   <script src="main.js"></script>
 </body>

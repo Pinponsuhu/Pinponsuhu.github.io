@@ -27,7 +27,3 @@ function hideNav(){
   document.getElementById('show').style.display = 'Block';
   document.getElementById('hide').style.display = 'none';
 }
-function fbk() {
-  // body...
-  window.scrollTo(0,800);
-}
