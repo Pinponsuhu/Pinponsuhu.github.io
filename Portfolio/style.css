@@ -257,11 +257,82 @@ ul li a:hover{
   background-color: #009965;
 }
 @media only screen and (min-width: 768px) {
-  .logo{
-    font-size: 34px;
+  .nav {
+    padding-bottom: 10px;
   }
-  .menu{
+
+  .logo {
+    font-size: 60px;
+    display: inline;
+  }
+
+  .menu {
     display: none;
   }
-  
+
+  #navBar1 {
+    margin-left: 180px;
+    font-size: 28px;
+    display: inline;
+  }
+
+  #navBar1 li {
+    display: inline;
+    margin-bottom: 50px;
+  }
+
+  #navBar1 li a {
+    font-size: 28px;
+  }
+
+  .myimg {
+    height: auto;
+    width: 40%;
+  }
+
+  .Heading {
+    font-size: 38px;
+  }
+
+  .img1 {
+    position: relative;
+    left: 50%;
+  }
+
+  .sec1 {
+
+    font-size: 28px;
+  }
+
+  .c-texts {
+    font-size: 28px;
+    width: 60%;
+  }
+
+  .c-labels {
+    font-size: 28px;
+    width: 30%;
+  }
+
+  .c-align {
+    width: 60%;
+    position: relative;
+    left: 25%;
+    font-size: 28px;
+  }
+
+  .m-skill {
+    height: 12px;
+  }
+
+  .html,
+  .css,
+  .jscript,
+  .cpp,
+  .p-shop,
+  .illus,
+  .figma,
+  .c-draw {
+    height: 12px;
+  }
 }
