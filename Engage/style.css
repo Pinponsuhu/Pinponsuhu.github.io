@@ -1,0 +1,132 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.Heading{
+  box-sizing: border-box;
+  margin: 0;
+  width: 100%;
+  height: 45px;
+  padding: 8px 8px 12px 8px;
+  display: block;
+  border-bottom:1px solid grey;
+}
+.logo{
+  display: inline;
+  font-size: 30px;
+  font-weight:400;
+}
+.sideNav{
+  font-size: 50px;
+  position: absolute;
+  right: 4%;
+  bottom: 97%;
+  margin-top: 0;
+  height:20px;
+}
+.viewSidenav{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #4250E2;
+  width: 100%;
+  height: 100%;
+  display: none;
+  opacity: 0.9;
+}
+.mainView li{
+  list-style: none;
+  width: 60%;
+  margin: 0% 20% 0px 20%;
+}
+.mainView li a{
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 10px;
+  padding: 10px 20px;
+}
+.mainView li a:hover{
+  background: white;
+  color: #4250E2;
+}
+.actn{
+  width: 58%;
+  margin:30px 21% 0 21%;
+}
+
+.actn a{
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+  display: inline-block;
+  color: white;
+}
+.Login{
+  display: inline-block;
+  margin-right: 8px;
+  border: 2px solid white;
+  padding: 6px 15px;
+}
+.cancel{
+  box-sizing: border-box;
+  display: block;
+  text-align: right;
+  width: 90%;
+  margin: 10px;
+  font-size: 34px;
+  color: white;
+}
+.sec1{
+  margin-top:6px;
+}
+.ttle1{
+ font-size: 38px;
+  width: 70%;
+  margin-left: 10px;
+ margin-bottom: 15px;
+}
+.content1{
+  width: 88%;
+  box-sizing: border-box;
+  padding-right: 10px;
+  font-size: 18px;
+  color: #9C9DA2;
+  margin-left: 3%;
+}
+.btn1{
+  width: 40%;
+  text-decoration: none;
+  display: block;
+  font-size: 24px;
+  margin-top: 14px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  margin-left: 10px;
+  color: white;
+  padding: 15px 20px;
+  background-color: #061187;
+}
+.img1{
+  width: 70%;
+  height: auto;
+  margin-left: 15%;
+  margin-bottom: 30px;
+}
+.ttle2{
+  width: 92%;
+  margin-left: 4%;
+  text-align: center;
+  font-size: 36px;
+}
+.content2{
+  width: 92%;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 18px;
+  color: #9C9DA2;
+  margin-left: 4%;
+  text-align: center;
+}

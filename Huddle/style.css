@@ -1,158 +1,190 @@
-*{
+* {
   padding: 0;
   margin: 0;
 }
+
 body {
+  width: 100%;
   padding-top: 10px;
-    background:#f7f8fb ;
+  background: #f7f8fb;
+  box-sizing: border-box;
 }
-.top{
+
+.top {
   display: inline;
 }
-.logo{
+
+.logo {
   margin-left: 10px;
   width: 45%;
 }
-.side{
-  width: 19%;
+
+.side {
+  width: 27%;
   float: right;
   text-decoration: none;
   text-align: right;
-  padding: 8px 20px;
-  margin-right: 10px;
-  color: white;
-  background-color: #E26923;
+  padding: 8px 9px;
+  margin-right: 8px;
+  font-size: 14px;
+  color: #E934A0;
+  box-sizing: border-box;
+  background-color: white;
   border-radius: 8px;
 }
-.sec2img{
+
+.sec2img {
   margin-top: 20px;
   margin-left: 10%;
   width: 80%;
   height: auto;
 }
-.ttle2{
-  color:#42445A;
-  font-size:36px;
-  margin-left:25%;
-  width:50%;
+
+.ttle2 {
+  color: #42445A;
+  font-size: 36px;
+  margin-left: 20%;
+  width: 60%;
   text-align: center;
 }
-.sec3content{
-  margin-left:21%;
-  width:58%;
-  font-size:18px;
+
+.sec3content {
+  margin-left: 21%;
+  width: 58%;
+  font-size: 18px;
   text-align: center;
-  color:#8F8F91;
+  color: #8F8F91;
 }
-.sec3btn{
-  width:50%;
-  border-radius:10px;
-  text-decoration:none;
-  padding:16px 25px;
-  background:#E934A0;
-  display:block;
+
+.sec3btn {
+  width: 60%;
+  margin-top: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 16px 18px;
+  background: #E934A0;
+  display: block;
   text-align: center;
-  margin-left:25%;
-  font-size:14px;
-  color:white;
+  margin-left: 20%;
+  font-size: 14px;
+  color: white;
   box-shadow: 0 0 8px grey;
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
-.sec3img{
- width: 50%;
- height: auto;
- margin-top: 70px;
- margin-left: 25%;
+
+.sec3img {
+  width: 50%;
+  height: auto;
+  margin-top: 70px;
+  margin-left: 25%;
 }
-.ttl3{
+
+.ttl3 {
   margin-top: 30px;
   text-align: center;
   width: 50%;
-  margin-left:25%;
+  margin-left: 25%;
 }
-.ttl4{
+
+.ttl4 {
   margin-top: 30px;
   text-align: center;
   width: 58%;
   margin-left: 21%
 }
-.sec4{
+
+.sec4 {
   width: 80%;
   margin-left: 10%;
   margin-top: 40px;
   background: #fff;
   padding: 20px;
-  box-shadow: 0px 0 5px black;
+  box-shadow: 1px 2px 2px grey;
   box-sizing: border-box;
 }
-.sec4 li{
+
+.sec4 li {
   text-align: center;
   list-style: none;
   margin-bottom: 15px;
   color: #B0B0B5;
 }
-.sec4ttl{
+
+.sec4ttl {
   text-align: center;
 }
+
 .sec4btn {
-  width: 80%;
+  width: 90%;
   border-radius: 10px;
   text-decoration: none;
-  padding: 16px 25px;
+  padding: 16px 18px;
   background: #E934A0;
   display: block;
   text-align: center;
-  margin-left: 10%;
+  margin-left: 5%;
   font-size: 14px;
   color: white;
   margin-top: 8px;
   box-shadow: 0 0 8px grey;
   box-sizing: border-box;
 }
-.footer{
+
+.footer {
   margin-top: 50px;
   background: #42445A;
   color: white;
   padding: 30px;
 }
-.smedia{
+
+.smedia {
   width: 46%;
   margin-left: 27%;
   margin-bottom: 18px;
 }
-.cright{
+
+.cright {
   text-align: center;
 }
-.link1, link2{
+
+.link1,
+link2 {
   margin-bottom: 20px;
 }
-.link1 li, .link2 li{
-  width: 44%;
-  margin-left:28%;
+
+.link1 li,
+.link2 li {
+  width: 50%;
+  margin-left: 25%;
   list-style-type: none;
   margin-top: 10px;
 }
-.sub{
+
+.sub {
   display: block;
   margin-top: 20px;
   width: 50%;
   margin-left: 25%;
 }
-.subs{
+
+.subs {
   text-align: center;
   margin-bottom: 10px;
 }
-.sub p{
+
+.sub p {
   text-align: center;
 }
-#email{
+
+#email {
   display: block;
   width: 90%;
   margin-top: 10px;
   height: 30px;
   border: 0;
 }
-.button{
+
+.button {
   box-sizing: border-box;
   width: 90%;
   border: 0;
@@ -162,15 +194,29 @@ body {
   background: #E934A0;
   color: white;
 }
-.rectq{
-  position:absolute;
-  top: 0;
-  right:  0;
-  z-index: 1;
-  background: #3B47CC;
-  width: 200px;
-  overflow: hidden;
-  height: 100px;
-  border-radius: 50px 0px 50px 50px;
+
+.rectq {
+  position: absolute;
+  bottom: 78%;
+  left: 40%;
+  z-index: -1;
+  background: #E934A0;
+  width: 300px;
+  height: 150px;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  border-radius: 150px 150px 150px 150px;
   transform: rotate(45deg);
+}
+.logo1{
+  width: 100%;
+  height: auto;
+}
+.media{
+  margin-left: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.link1 a:hover, .link2 a:hover{
+  background-color: #E934A0;
+  padding: 5px 10px;
 }
