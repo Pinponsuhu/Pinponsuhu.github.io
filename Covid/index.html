@@ -11,37 +11,75 @@
 
 <body onload="getTime()">
   <div class="contain">
-    <input type="text" name="search" id="search" value="" placeholder="Search by state" />
-    <button type="submit" id="searchng">Search</button>
+ <select id="select" onchange="select()">
+      <option disabled selected>--Select State--</option>
+      <option value="1">Abia</option>
+      <option value="2">Adamawa</option>
+      <option value="3">Akwa Ibom</option>
+      <option value="4">Anambra</option>
+      <option value="5">Bauchi</option>
+      <option value="6">Bayelsa</option>
+      <option value="7">Benue</option>
+      <option value="8">Borno</option>
+      <option value="9">Cross River</option>
+      <option value="10">Delta</option>
+      <option value="11">Ebonyi</option>
+      <option value="12">Edo</option>
+      <option value="13">Ekiti</option>
+      <option value="14">Enugu</option>
+      <option value="15">Federal Capital Territory</option>
+      <option value="16">Gombe</option>
+      <option value="17">Imo</option>
+      <option value="18">Jigawa</option>
+      <option value="19">Kaduna</option>
+      <option value="20">Kano</option>
+      <option value="21">Katsina</option>
+      <option value="22">Kebbi</option>
+      <option value="23">Kogi</option>
+      <option value="24">Kwara</option>
+      <option value="25">Lagos</option>
+      <option value="26">Nasarawa</option>
+      <option value="27">Niger</option>
+      <option value="28">Ogun</option>
+      <option value="29">Ondo</option>
+      <option value="30">Osun</option>
+      <option value="31">Oyo</option>
+      <option value="32">Plateau</option>
+      <option value="33">Rivers</option>
+      <option value="34">Sokoto</option>
+      <option value="35">Taraba</option>
+      <option value="36">Yobe</option>
+      <option value="37">Zamfara</option>
+    </select>
     <img class="noti" src="Bell.png" alt="" />
     <p id="time">Time goes here</p>
     <p class="text">Corona Virus Cases</p>
-    <span id="total">120</span>
+    <span id="total">---</span>
   </div>
   <div class="boxes">
     <div class="one">
       <h4 class="Ncase">New Cases</h4>
-      <h3 class="Nno">120</h3>
+      <h3 class="Nno" id="nno">---</h3>
       <img class="green" src="audio-wave-128-1.png" alt="" />
     </div>
     <div class="two">
       <h4 class="Ndeaths">New Deaths</h4>
-      <h3 class="Rno">120</h3>
+      <h3 class="Rno">---</h3>
       <img class="red" src="audio-wave-128.png" alt="" />
     </div>
     <div class="four">
       <div class="activ2">
         <div class="activ2Sec1">
           <h1 class="rcrCase">Discharged</h1>
-          <h1 id="rcrdigits">500</h1>
+          <h1 id="rcrdigits">---</h1>
         </div>
         <div class="activ2Sec2">
           <img class="down" src="arrow-down-6-48.png" alt="" />
           <h1 class="recvred">Recovered</h1>
-          <p id="rcredNo">20</p>
+          <p id="rcredNo">---</p>
           <img class="up" src="arrow-up-6-48.png" alt="" />
           <h1 class="Desed">Deceased</h1>
-          <p id="DesedNo">2</p>
+          <p id="DesedNo">---</p>
         </div>
       </div>
     </div>
