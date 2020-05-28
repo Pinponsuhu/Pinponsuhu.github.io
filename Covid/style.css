@@ -4,7 +4,7 @@
 }
 
 .contain {
-  padding: 10px 20px;
+  padding: 0px 20px;
   color: #fff;
   box-sizing: border-box;
   width: 100%;
@@ -15,7 +15,7 @@
 }
 
 #time {
-  margin-top: 6px;
+  margin-top: 2px;
   font-size: 16px;
 }
 
@@ -221,4 +221,43 @@
 .footer p{
   font-size: 16px;
   text-align: center;
+}
+#menu{
+  margin-top: -12px;
+  margin-bottom: -30px;
+  float: right;
+  font-size: 58px;
+}
+.clear{
+  display: block;
+  clear: both;
+  content: "";
+}
+#sidenav{
+  display: none;
+  position: absolute;
+  border-radius: 0 0 0 15px;
+  padding: 0px 28px 40px 28px;
+  color: #0B7C1C;
+  background-color:white;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+#sidenav li{
+  list-style: none;
+}
+#sidenav li a{
+  display: block;
+  text-align: center;
+  color: #0B7C1C;
+  text-decoration: none;
+  font-size: 20px;
+  margin-top: 18px;
+}
+#cancel{
+  margin-top: -8px;
+  margin-bottom: 15px;
+  text-align: right;
+  font-weight: 200;
 }

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>All states statistics</title>
+  <link rel="stylesheet" href="style2.css" type="text/css" media="all" />
+  <script src="main2.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body onload="load()">
+  <h1 class="title">All states statistics</h1>
+  <table>
+    <tr class="header">
+      <td>States</td>
+      <td>T/C</td>
+      <td>A/C</td>
+      <td>R/C</td>
+      <td>D/C</td>
+    </tr>
+    <tr>
+      <td class="state">Lagos</td>
+      <td id="lagT">---</td>
+      <td id="lagA">---</td>
+      <td id="lagR">---</td>
+      <td id="lagD">---</td>
+    </tr>
+    <tr>
+      <td class="state">Kano</td>
+      <td id="kT">---</td>
+      <td id="kA">---</td>
+      <td id="kR">---</td>
+      <td id="kD">---</td>
+    </tr>
+    <tr>
+      <td class="state">Abuja</td>
+      <td id="aT">---</td>
+      <td id="aA">---</td>
+      <td id="aR">---</td>
+      <td id="aD">---</td>
+    </tr>
+    <tr>
+      <td class="state">Kastina</td>
+      <td id="kaT">---</td>
+      <td id="kaA">---</td>
+      <td id="kaR">---</td>
+      <td id="kaD">---</td>
+    </tr>
+    <tr>
+      <td class="state">Borno</td>
+      <td id="bT">---</td>
+      <td id="bA">---</td>
+      <td id="bR">---</td>
+      <td id="bD">---</td>
+    </tr>
+    <tr>
+      <td class="state">Oyo</td>
+      <td id="oT">---</td>
+      <td id="oA">---</td>
+      <td id="oR">---</td>
+      <td id="oD">---</td>
+    </tr>
+    <tr>
+      <td class="state">Ogun</td>
+      <td id="ogT">---</td>
+      <td id="ogA">---</td>
+      <td id="ogR">---</td>
+      <td id="ogD">---</td>
+    </tr>
+    <tr>
+      <td class="state">Jigawa</td>
+      <td id="jT">---</td>
+      <td id="jA">---</td>
+      <td id="jR">---</td>
+      <td id="jD">---</td>
+    </tr>
+    <tr>
+      <td class="state">Edo</td>
+      <td id="eT">---</td>
+      <td id="eA">---</td>
+      <td id="eR">---</td>
+      <td id="eD">---</td>
+    </tr>
+    <tr>
+      <td class="state">Bauchi</td>
+      <td id="baT">---</td>
+      <td id="baA">---</td>
+      <td id="baR">---</td>
+      <td id="baD">---</td>
+    </tr>
+    <tr>
+      <td class="state">Kaduna</td>
+      <td id="kdT">---</td>
+      <td id="kdA">---</td>
+      <td id="kdR">---</td>
+      <td id="kdD">---</td>
+    </tr>
+    <tr>
+      <td class="state">Rivers</td>
+      <td id="rT">---</td>
+      <td id="rA">---</td>
+      <td id="rR">---</td>
+      <td id="rD">---</td>
+    </tr>
+    <tr>
+      <td class="state">Gombe</td>
+      <td id="gT">---</td>
+      <td id="gA">---</td>
+      <td id="gR">---</td>
+      <td id="gD">---</td>
+    </tr>
+    <tr>
+      <td class="state">Sokoto</td>
+      <td id="sT">---</td>
+      <td id="sA">---</td>
+      <td id="sR">---</td>
+      <td id="sD">---</td>
+    </tr>
+    <tr>
+      <td class="state">Plateau</td>
+      <td id="pT">---</td>
+      <td id="pA">---</td>
+      <td id="pR">---</td>
+      <td id="pD">---</td>
+    </tr>
+    <tr>
+      <td class="state">Kwara</td>
+      <td id="kwT">---</td>
+      <td id="kwA">---</td>
+      <td id="kwR">---</td>
+      <td id="kwD">---</td>
+    </tr>
+    <tr>
+      <td class="state">Zamfara</td>
+      <td id="zT">---</td>
+      <td id="zA">---</td>
+      <td id="zR">---</td>
+      <td id="zD">---</td>
+    </tr>
+    <tr>
+      <td class="state">Nasarawa</td>
+      <td id="nT">---</td>
+      <td id="nA">---</td>
+      <td id="nR">---</td>
+      <td id="nD">---</td>
+    </tr>
+    <tr>
+      <td class="state">Delta</td>
+      <td id="dT">---</td>
+      <td id="dA">---</td>
+      <td id="dR">---</td>
+      <td id="dD">---</td>
+    </tr>
+    <tr>
+      <td class="state">Yobe</td>
+      <td id="yT">---</td>
+      <td id="yA">---</td>
+      <td id="yR">---</td>
+      <td id="yD">---</td>
+    </tr>
+    <tr>
+      <td class="state">Osun</td>
+      <td id="osT">---</td>
+      <td id="osA">---</td>
+      <td id="osR">---</td>
+      <td id="osD">---</td>
+    </tr>
+    <tr>
+      <td class="state">Adamawa</td>
+      <td id="adT">---</td>
+      <td id="adA">---</td>
+      <td id="adR">---</td>
+      <td id="adD">---</td>
+    </tr>
+    <tr>
+      <td class="state">Ebonyi</td>
+      <td id="ebT">---</td>
+      <td id="ebA">---</td>
+      <td id="ebR">---</td>
+      <td id="ebD">---</td>
+    </tr>
+    <tr>
+      <td class="state">Akwa Ibom</td>
+      <td id="akT">---</td>
+      <td id="akA">---</td>
+      <td id="akR">---</td>
+      <td id="akD">---</td>
+    </tr>
+    <tr>
+      <td class="state">Imo</td>
+      <td id="imT">---</td>
+      <td id="imA">---</td>
+      <td id="imR">---</td>
+      <td id="imD">---</td>
+    </tr>
+    <tr>
+      <td class="state">Kebbi</td>
+      <td id="keT">---</td>
+      <td id="keA">---</td>
+      <td id="keR">---</td>
+      <td id="keD">---</td>
+    </tr>
+    <tr>
+      <td class="state">Niger</td>
+      <td id="niT">---</td>
+      <td id="niA">---</td>
+      <td id="niR">---</td>
+      <td id="niD">---</td>
+    </tr>
+    <tr>
+      <td class="state">Ondo</td>
+      <td id="onT">---</td>
+      <td id="onA">---</td>
+      <td id="onR">---</td>
+      <td id="onD">---</td>
+    </tr>
+    <tr>
+      <td class="state">Ekiti</td>
+      <td id="ekT">---</td>
+      <td id="ekA">---</td>
+      <td id="ekR">---</td>
+      <td id="ekD">---</td>
+    </tr>
+    <tr>
+      <td class="state">Taraba</td>
+      <td id="taT">---</td>
+      <td id="taA">---</td>
+      <td id="taR">---</td>
+      <td id="taD">---</td>
+    </tr>
+    <tr>
+      <td class="state">Enugu</td>
+      <td id="enT">---</td>
+      <td id="enA">---</td>
+      <td id="enR">---</td>
+      <td id="enD">---</td>
+    </tr>
+    <tr>
+      <td class="state">Bayelsa</td>
+      <td id="byT">---</td>
+      <td id="byA">---</td>
+      <td id="byR">---</td>
+      <td id="byD">---</td>
+    </tr>
+    <tr>
+      <td class="state">Anambra</td>
+      <td id="anT">---</td>
+      <td id="anA">---</td>
+      <td id="anR">---</td>
+      <td id="anD">---</td>
+    </tr>
+    <tr>
+      <td class="state">Abia</td>
+      <td id="abT">---</td>
+      <td id="abA">---</td>
+      <td id="abR">---</td>
+      <td id="abD">---</td>
+    </tr>
+    <tr>
+      <td class="state">Benue</td>
+      <td id="bnT">---</td>
+      <td id="bnA">---</td>
+      <td id="bnR">---</td>
+      <td id="bnD">---</td>
+    </tr>
+    <tr>
+      <td class="state">Kogi</td>
+      <td id="kgT">---</td>
+      <td id="kgA">---</td>
+      <td id="kgR">---</td>
+      <td id="kgD">---</td>
+    </tr>
+  </table>
+</body>
+
+</html>

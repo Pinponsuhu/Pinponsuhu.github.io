@@ -11,50 +11,18 @@
 
 <body onload="getTime()">
   <div class="contain">
- <select id="select" onchange="select()">
-      <option disabled selected>--Select State--</option>
-      <option value="1">Abia</option>
-      <option value="2">Adamawa</option>
-      <option value="3">Akwa Ibom</option>
-      <option value="4">Anambra</option>
-      <option value="5">Bauchi</option>
-      <option value="6">Bayelsa</option>
-      <option value="7">Benue</option>
-      <option value="8">Borno</option>
-      <option value="9">Cross River</option>
-      <option value="10">Delta</option>
-      <option value="11">Ebonyi</option>
-      <option value="12">Edo</option>
-      <option value="13">Ekiti</option>
-      <option value="14">Enugu</option>
-      <option value="15">Federal Capital Territory</option>
-      <option value="16">Gombe</option>
-      <option value="17">Imo</option>
-      <option value="18">Jigawa</option>
-      <option value="19">Kaduna</option>
-      <option value="20">Kano</option>
-      <option value="21">Katsina</option>
-      <option value="22">Kebbi</option>
-      <option value="23">Kogi</option>
-      <option value="24">Kwara</option>
-      <option value="25">Lagos</option>
-      <option value="26">Nasarawa</option>
-      <option value="27">Niger</option>
-      <option value="28">Ogun</option>
-      <option value="29">Ondo</option>
-      <option value="30">Osun</option>
-      <option value="31">Oyo</option>
-      <option value="32">Plateau</option>
-      <option value="33">Rivers</option>
-      <option value="34">Sokoto</option>
-      <option value="35">Taraba</option>
-      <option value="36">Yobe</option>
-      <option value="37">Zamfara</option>
-    </select>
-    
+<span id="menu" onclick="click1()">&equiv;</span>
+    <div class="clear">
+      
+    </div>
     <p id="time">Last updated: </p>
     <p class="text">Corona Virus Cases</p>
     <span id="total">---</span>
+        <div id="sidenav">
+          <h1 id="cancel" onclick="cancel()">x</h1>
+          <li><a href="state.html">All states</a></li>
+          <li><a>Contact</a></li>
+        </div>
   </div>
   <div class="boxes">
     <div class="one">

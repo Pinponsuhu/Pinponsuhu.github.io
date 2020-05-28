@@ -5,16 +5,7 @@ function getTime() {
   var fullTime = wMonth[month] + " " + tym.getDate() + " " + tym.getFullYear();
   //document.getElementById('time').innerHTML = fullTime;
 
-  var requestOption = {
-    method: 'GET',
-    redirect: 'follow'
-  };
-
-  fetch("https://covid19ngr.herokuapp.com/api/timelines/", requestOption)
-    .then(response => response.json())
-    .then(function(result1) {
-      document.getElementById('time').innerHTML += result1.data.reverse()[0].date.slice(0,10);
-      })
+  
   var requestOptions = {
     method: 'GET',
     redirect: 'follow'
@@ -32,32 +23,9 @@ function getTime() {
     })
     .catch(error => console.log('error', error));
 }
-
-function search() {
-  var Value = document.getElementById('search').value;
-  var val = Value[0].toUpperCase() + Value.slice(1);
-  if (val != "") {
-    var dis = 'result.data.' + val + '.confirmedCases'
-  }
+function click1(){
+  document.getElementById('sidenav').style.display = 'block';
 }
-
-function select() {
-  document.getElementById
-  var requestOptions = {
-    method: 'GET',
-    redirect: 'follow'
-  };
-
-  fetch("https://covid19project.org.ng/api/endpoints/states", requestOptions)
-    .then(response => response.json())
-    .then(function(result) {
-      var sel = document.getElementById('select').value;
-      document.getElementById('total').innerHTML = parseInt(result.Covid19NG[sel - 1].death) + parseInt(result.Covid19NG[sel - 1].recovered) + parseInt(result.Covid19NG[sel - 1].cases);
-      document.getElementById('rcredNo').innerHTML = result.Covid19NG[sel - 1].recovered;
-      document.getElementById('DesedNo').innerHTML = result.Covid19NG[sel - 1].death;
-      document.getElementById('rcrdigits').innerHTML = parseInt(result.Covid19NG[sel - 1].death) + parseInt(result.Covid19NG[sel - 1].recovered);
-      document.getElementById('nno').innerHTML = (parseInt(result.Covid19NG[sel - 1].death) + parseInt(result.Covid19NG[sel - 1].recovered) + parseInt(result.Covid19NG[sel - 1].cases)) - (parseInt(result.Covid19NG[sel - 1].death) + parseInt(result.Covid19NG[sel - 1].recovered));
-    })
-    .catch(error => console.log('error', error));
-
+function cancel(){
+  document.getElementById('sidenav').style.display = 'none';
 }
