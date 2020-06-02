@@ -3,7 +3,7 @@ function getTime() {
   var month = tym.getMonth();
   var wMonth = ["January", "Febuary", "March", "April", "May", "June", "July", "August", "September", "October", "Novermber", "December"]
   var fullTime = wMonth[month] + " " + tym.getDate() + " " + tym.getFullYear();
-  //document.getElementById('time').innerHTML = fullTime;
+//  document.getElementById('time').innerHTML = fullTime;
 
   
   var requestOptions = {
