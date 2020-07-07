@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#main {
+  top: 45%;
+  text-align: center;
+  width: 90%;
+  margin: 50% auto 0 auto;
+  font-size: 20px;
+  font-style: italic;
+}
+
+#author {
+  text-align: right;
+  width: 80%;
+  margin: auto;
+}
+
+.media {
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+  margin-top: 100px;
+  margin-left: 20px;
+  color: #0015FF;
+  font-weight: bolder;
+  text-decoration: none;
+  background: white;
+  width: 9%;
+}
+
+.fb {
+  font-size: 50px;
+  text-decoration: none;
+  margin-left: 5px;
+  color: #0015FF;
+  outline: none;
+}
+
+.heading {
+  width: 100%;
+  box-shadow: 0 0 3px grey;
+  padding: 13px 8px;
+  box-sizing: border-box;
+  height: auto;
+}
+
+.heading h3 {
+  font-weight: 500;
+}
