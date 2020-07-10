@@ -10,4 +10,5 @@ function load() {
       document.getElementById('author').innerHTML = result.author;
     })
     .catch(error => console.log('error', error));
+    
 }

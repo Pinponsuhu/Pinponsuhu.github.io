@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>Side nav</title>
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
+  <script src="main.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body onload="load()">
+  <div class="navcls" id="navcls">
+    <a href="#">Home</a>
+    <a href="#">News</a>
+    <a href="#">Music</a>
+    <a href="#">Videos</a>
+  </div>
+  <div class="main">
+    <span class="logo">Gist<span class="max">max</span></span>
+    <span class="nav" id="nav" onclick="opennav()">&#9776;</span>
+    <span class="nav" id="cls" onclick="cls();">&times;</span>
+  </div>
+  <div class="fixedup">
+    <div id="scrollup">
+      <img class="upimg" src="arrow.png" alt="" href=".main" />
+    </div>
+  </div>
+  <div class="content" id="content">
+    <li class="news" id="news">
+    </li>
+  </div>
+</body>
+
+</html>
