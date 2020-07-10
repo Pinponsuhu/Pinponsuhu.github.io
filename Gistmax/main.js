@@ -11,26 +11,7 @@ function cls() {
   document.getElementById("cls").style.display = "none";
 }
 
-/*function load() {
-  var requestOptions = {
-    method: 'GET',
-    redirect: 'follow'
-  };
 
-  fetch("http://newsapi.org/v2/top-headlines?country=ng&apiKey=24ecea763ea844c9a5d9c1f69fc75c66", requestOptions)
-    .then(response => response.json())
-    .then(function(result) {
-      document.getElementById('newsimg').src = result.articles[0].urlToImage;
-      document.getElementById('titles').innerHTML = result.articles[0].title;
-      document.getElementById('date').innerHTML = result.articles[0].publishedAt;
-
-      let i = document.getElementById('news').length;
-
-      console.log(i);
-
-    })
-    .catch(error => console.log('error', error));
-}*/
 function load() {
   var requestOptions = {
     method: 'GET',
