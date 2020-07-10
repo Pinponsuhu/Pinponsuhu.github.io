@@ -31,12 +31,12 @@ function load() {
         var nP = document.createElement('p');
         var nDate = document.createElement('span');
         var nTime = document.createElement('span');
-        nImg.src = result.articles[i].urlToImage;
+      nImg.src = result.articles[i].urlToImage;
         nDate.innerHTML = 'Loading...';
         nDate.id = 'date';
         nTime.id = 'time';
         nTime.innerHTML = result.articles[i].publishedAt;
-        nP.innerHTML = result.articles[i].title;
+        nP.innerHTML =result.articles[i].title;
         nImg.id = 'newsimg';
         nP.id = 'titles';
         nNews.className = 'news';
@@ -48,4 +48,9 @@ function load() {
       }
     })
     .catch(error => console.log('error', error));
+      
+}
+
+function main(){
+  alert('shit');
 }

@@ -11,7 +11,7 @@
   <script src="main.js" type="text/javascript" charset="utf-8"></script>
 </head>
 
-<body onload="load()">
+<body onload="load()" onoffline="main()">
   <div class="navcls" id="navcls">
     <a href="#">Home</a>
     <a href="#">News</a>
@@ -25,11 +25,14 @@
   </div>
   <div class="fixedup">
     <div id="scrollup">
-      <img class="upimg" src="arrow.png" alt="" href=".main" />
+      <a href="#nav">
+      <img class="upimg" src="arrow.png" alt=""/>
+      </a>
     </div>
   </div>
   <div class="content" id="content">
-    <li class="news" id="news">
+    <li class="news" id="news" >
+      
     </li>
   </div>
 </body>
