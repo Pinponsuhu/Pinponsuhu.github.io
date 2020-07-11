@@ -95,7 +95,7 @@
     position: relative;
     width: 92%;
     margin: 20px auto 0 auto;
-    list-style: none;
+    list-style-type: none;
   }
 
   .news span {
