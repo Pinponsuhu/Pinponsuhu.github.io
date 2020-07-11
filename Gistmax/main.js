@@ -48,7 +48,3 @@ function load() {
     })
     .catch(error => console.log('error', error));
 }
-
-function main() {
-  alert('shit');
-}
