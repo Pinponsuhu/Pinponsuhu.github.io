@@ -7,7 +7,7 @@ function load() {
     .then(response => response.json())
     .then(function(result) {
       document.getElementById('main').innerHTML = result.content;
-      document.getElementById('author').innerHTML = result.author;
+      document.getElementById('author').innerHTML ='-' + result.author;
     })
     .catch(error => console.log('error', error));
     

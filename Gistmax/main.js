@@ -22,28 +22,28 @@ function load() {
     .then(response => response.json())
     .then(function(result) {
       var i;
-      for (i = 0; i <= 9; i++) {
-        var news = document.getElementById('news');
+      for (i = 0; i <= 11; i++) {
+        var body = document.getElementById('body');
         var all = document.getElementById('content');
         var nNews = document.createElement('li');
         var nImg = document.createElement('img');
         var nP = document.createElement('p');
         var nDate = document.createElement('span');
         var nTime = document.createElement('span');
-        nImg.src = result.articles[i].urlToImage;
-        nDate.innerHTML = 'Loading...';
-        nDate.id = 'date';
-        nTime.id = 'time';
-        nTime.innerHTML = result.articles[i].publishedAt;
-        nP.innerHTML = result.articles[i].title;
         nImg.id = 'newsimg';
         nP.id = 'titles';
+        nDate.id = 'date';
         nNews.className = 'news';
-        all.appendChild(nNews);
+        nTime.id = 'time';
+        nImg.src = result.articles[i].urlToImage;
+        nTime.innerHTML = result.articles[i].publishedAt;
+        nP.innerHTML = result.articles[i].title;
         nNews.appendChild(nImg);
         nNews.appendChild(nP);
         nNews.appendChild(nDate);
         nNews.appendChild(nTime);
+        all.appendChild(nNews);
+        body.appendChild(all);
       }
     })
     .catch(error => console.log('error', error));

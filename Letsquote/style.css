@@ -2,22 +2,25 @@
   margin: 0;
   padding: 0;
 }
-body{
-  background-image: url("lorempixel.com/g/320/240/nature/");
+
+body {
+  font-family: 'Playfair Display', serif;
 }
+
 #main {
   top: 45%;
   text-align: center;
   width: 90%;
   margin: 42% auto 0 auto;
-  font-size: 20px;
-  font-style: italic;
+  font-size: 18px;
 }
 
 #author {
   text-align: right;
   width: 80%;
   margin: auto;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .media {
@@ -50,4 +53,5 @@ body{
 
 .heading h3 {
   font-weight: 500;
+  font-size: 22px;
 }
