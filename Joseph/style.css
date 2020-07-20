@@ -22,6 +22,7 @@
 #nav-btn {
   text-align: right;
   margin: -70px 10px 0 0;
+  color: #12174C;
   font-size: 60px;
 }
 
@@ -127,6 +128,7 @@
 .sec-five {
   margin-top: 30px;
   width: 96%;
+  margin-left:2%;
 }
 
 .sec-fiveImg,
@@ -249,4 +251,110 @@
   margin-top: 38px;
   margin-bottom: 18px;
   text-align: center;
+}
+#sec-fourteenPics {
+  width: 150px;
+  height: 150px;
+  margin: 10px auto;
+}
+
+#picSet {
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 8px grey;
+}
+.sec-fourteen{
+  border-radius: 6px;
+  margin-top: 20px;
+  width: 90%;
+  margin-left: 5%;
+  box-shadow: 0 0 3px grey;
+  padding: 16px 12px;
+  box-sizing: border-box;
+}
+#paraSet{
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+}
+#nameSet{
+  text-align: center;
+  color: #66676B;
+  margin-top: 10px;
+  font-size: 22px;
+}
+#o1,#t2,#t3,#f4{
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  border: 1px solid black;
+  display: inline-block;
+}
+#o1 {
+  background-color: #12174C;
+}
+.centering{
+  width: 41px;
+  margin: 8px auto;
+}
+#nav-display{
+  position: fixed;
+  top: 46px;
+  margin-top: 18px;
+  width: 90%;
+  margin-left: 5%;
+  border-radius: 6px;
+  box-shadow: 0 0 5px grey;
+  box-sizing: border-box;
+  padding: 10px;
+  display: none;
+  background: #ffffff;
+}
+#nav-display a{
+  display: block;
+  text-decoration: none;
+  font-size: 18px;
+  color: #66676B;
+  margin: 6px 0 0 5%;
+}
+#page-view{
+  display: none;
+  margin-top: 10px;
+  width: 90%;
+  margin-left: 5%;
+  border-radius: 6px;
+  padding: 8px;
+  box-shadow: 0 0 5px grey;
+  box-sizing: border-box;
+}
+#page-view a{
+  margin: 6px 0 0 5%;
+  font-size: 16px;
+}
+.pgS{
+  width: 40px;
+  color: #12174C;
+}
+#page-view a, .pgS{
+  display: inline-block;
+}
+.alignmentA{
+  display: block;
+  margin-bottom: 6px;
+  margin-left: 10px;
+}
+.login{
+  display: block;
+  color: #12174C;
+}
+.signUp{
+  display: block;
+  background: #12174C;
+  padding: 10px 8px;
+  border-radius: 4px;
+  color: #ffffff;
 }

@@ -71,3 +71,35 @@ function hovero6() {
   document.getElementById('fafa6').style.color = '#12174C';
   document.getElementById('title6').style.color = '#000000';
 }
+
+function autochange(){
+  var images = [];
+  images[0] = 'bj.jpg';
+  images[1] = 'pepe.jpg';
+  var timeout = 2000;
+  var sets = document.getElementById('picSet').src = images;
+  for(var i = 0; i< images.length;i++){
+    sets.style.src = images[i];
+  }
+}
+function menu(){
+ var navv = document.getElementById('nav-display');
+ var navbtn = document.getElementById('nav-btn');
+ if(navbtn.innerText == '≡'){
+   navv.style.display = 'block';
+   navbtn.innerText = '×';
+ }
+ else{
+   navv.style.display = 'none';
+   navbtn.innerText = '≡';
+ }
+}
+function menu2(){
+  var pageView = document.getElementById('page-view');
+  var i = 1;
+    
+    if(i%2 > 0){
+      pageView.style.display = 'block';
+      i++;
+    }
+}

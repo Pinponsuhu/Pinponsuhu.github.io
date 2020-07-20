@@ -15,12 +15,12 @@
 <body>
   <div class="nav-sec">
     <h1 class="logo">Joseph</h1>
-    <p id="nav-btn">&equiv;</p>
+    <p id="nav-btn" onclick="menu();">≡</p>
   </div>
   <div class="contents">
     <div class="sec-one">
       <h1 class="main-head">Meet with us to success dream business</h1>
-      <p class="main-para">Making use of the respective industries and our team works. Build an online presence with this professional HTML,CSS and JS template.</p>
+      <p class="main-para" id="top">Making use of the respective industries and our team works. Build an online presence with this professional HTML,CSS and JS template.</p>
       <input type="button" name="secOne-btn" id="secOne-btn" value="GET STARTED" />
       <img class="secOne-img" src="main.jpg" alt="Main image" />
       <h1 class="sub-headOne">We provide solutions to grow your business</h1>
@@ -100,15 +100,60 @@
       <a href="#">Learn more »</a>
     </div>
     <h1 class="lone">Recent Reviews</h1>
+    <div class="sec-fourteen">
+      <div id="sec-fourteenPics">
+        <img src="aboutimg.jpg" alt="" id="picSet" />
+      </div>
+      <p id="paraSet">Sed ut perspiciatis unde omnis natus error dolor volup tatem ed accusantium doloremque laudantium, tota rem aperiam, eaqu ipsa quae ab illo quasi architi ecto beatae vita.</p>
+      <p id="nameSet">-Pinponsuhu</p>
+      <div class="centering" onmouseover="autochange();">
+        <div id="o1">
+        </div>
+        <div id="t2">
+        </div>
+        <div id="t3">
+        </div>
+        <div id="f4">
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="up-arrow">
-    <p>⤴</p>
-  </div>
+  <a href="#top">
+    <div class="up-arrow">
+      <p>⤴</p>
+    </div>
+  </a>
   <div id="nav-display">
     <a href="#">Home</a>
     <a href="#">About</a>
-    <a href="#">Pages</a> <i class="fa fa-caret-up" style="font-size: 20px"></i>
+    <a href="#" class="page" id="page" onclick="menu2()">Pages <i class="fa fa-caret-down cetUp" style="font-size: 20px"></i></a>
     <div id="page-view">
+      <div class="alignmentA">
+        <i class="fa fa-dollar pgS" style="font-size: 20px"></i>
+        <a href="#">Pricing</a>
+      </div>
+      <div class="alignmentA">
+        <i class="fa fa-group pgS" style="font-size: 20px"></i>
+        <a href="#">Join the Team</a>
+      </div>
+      <div class="alignmentA">
+        <i class="fa fa-graduation-cap pgS" style="font-size: 20px"></i>
+        <a href="#">Learning Center</a>
+      </div>
+      <div class="alignmentA">
+        <i class="fa fa-newspaper-o pgS" style="font-size: 20px"></i>
+        <a href="#">Blog Post</a>
+      </div>
+      <div class="alignmentA">
+        <i class="fa fa-briefcase pgS" style="font-size: 20px"></i>
+        <a href="#">Job Overview</a>
+      </div>
+    </div>
+    <a href="#">Block</a>
+    <a href="#">Contact</a>
+    <div class="access-sec">
+      <a href="#" class="login" style="color: #12174C">Login</a>
+      <a href="#" class="signUp" style="color: #ffffff">CREATE FREE ACCOUNT</a>
     </div>
   </div>
   <script src="main.js"></script>
