@@ -72,7 +72,7 @@ function hovero6() {
   document.getElementById('title6').style.color = '#000000';
 }
 
-function autochange(){
+/*function autochange(){
   var images = [];
   images[0] = 'bj.jpg';
   images[1] = 'pepe.jpg';
@@ -81,7 +81,7 @@ function autochange(){
   for(var i = 0; i< images.length;i++){
     sets.style.src = images[i];
   }
-}
+}*/
 function menu(){
  var navv = document.getElementById('nav-display');
  var navbtn = document.getElementById('nav-btn');

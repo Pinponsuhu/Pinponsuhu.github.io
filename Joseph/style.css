@@ -358,3 +358,120 @@
   border-radius: 4px;
   color: #ffffff;
 }
+.sec-15{
+  width: 90%;
+  margin-left: 5%;
+  box-shadow: 0 0 3px grey;
+  padding: 16px 12px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  margin-top: 30px;
+}
+.sec-15 h1{
+  font-size: 26px;
+  text-align: center;
+  margin: 12px 0;
+}
+.sec-15 p{
+  text-align: center;
+  color: #66676B;
+}
+.sec-15 input{
+  display: block;
+}
+#email15{
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 20px;
+  padding: 16px;
+  border: 1px solid #12174C;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  outline: none;
+}
+#subscribe15{
+  width: 90%;
+  margin-left: 5%;
+  padding: 16px;
+  background: #12174C;
+  color: white;
+  border-radius: 6px;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+.sec-16{
+  backdrop-filter: contrast(26px);
+  background-image: url("Group.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 40px 0;
+  width: 100%;
+  margin-top: 20px;
+}
+.sec-16 h2{
+  width: 90%;
+  text-shadow: 0 0 2px black;
+  margin-left: 5%;
+  font-size: 26px;
+  color: #FFFFFF;
+}
+.sec-16 p{
+  text-shadow: 0 0 2px grey;
+  width: 90%;
+  margin-left: 5%;
+  text-align: center;
+  color: #FFFFFF;
+}
+.sec-16 a{
+  display: block;
+  margin-left: 5%;
+  border:  1px solid white;
+  padding: 10px 0;
+  margin-top: 18px;
+  width: 110px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+.footer-sec{
+  box-sizing: border-box;
+  margin-top: 20px;
+  padding: 40px 10px;
+  background: #E1E2F0;
+}
+.footer-sec h3{
+  color: #12174C;
+  margin: 16px 0;
+  font-size: 20px;
+}
+ .footer-sec p{
+   margin: 3px 0;
+   font-size: 17px;
+   color: #66676B;
+ }
+ .footer-sec a{
+   text-decoration: none;
+   display: block;
+   font-size: 17px;
+   margin: 7px 0;
+   color: #66676B;
+ }
+ .lFooter{
+   background: #AFB4E4;
+   padding: 20px 10px;
+   box-sizing: border-box;
+ }
+ .lFooter p{
+   text-align: center;
+   color: #66676B;
+   font-size: 17px;
+ }
+ .lFooter p a{
+   color: #E47A4F;
+   text-decoration: none;
+   font-weight: bold;
+ }
