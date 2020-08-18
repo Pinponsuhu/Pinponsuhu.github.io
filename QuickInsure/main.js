@@ -16,6 +16,7 @@ $(".login").click(function() {
 });
 $(".dAcct").click(function(){
   $(".signUp-sec").show('slow');
+  $(".login-sec").hide('slow');
 });
 $(".signUp").click(function(){
   $(".signUp-sec").show('slow');
