@@ -8,6 +8,8 @@
   <title>HTML</title>
   <!-- HTML -->
   <!-- Custom Styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -44,12 +46,27 @@
       </tr>
     </table>
   </div>
+  <div id="about">
+    <h2 id="cancel" onclick="cancel()">×</h2>
+    <div class="imgcontainer">
+      <img class="myimg" src="aboutimg.jpg" alt="" />
+    </div>
+    <div class="writing">
+      <p>My name is Pinponsuhu Joseph, i'm a Frontend Developer and a UI/UX designer studying computer science at Lagos State University.</p>
+      <h3>Contact</h3>
+      <div class="contact">
+      <a href="github.com/Pinponsuhu"><i class="fa fa-github"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=100008691431922"><i class="fa fa-facebook"></i></a>
+      <a href="https://mobile.twitter.com/IbakaLasu_"><i class="fa fa-twitter  "></i></a>
+      </div>
+    </div>
+  </div>
   <div class="me">
     <p>Made with ❤ by Pinponsuhu Joseph</p>
   </div>
   <div id="nav-disp">
     <a href="#" id="viewState" onclick="openStates();">States</a>
-    <a href="#">About</a>
+    <a href="#" onclick="about();">About</a>
   </div>
   <script src="main.js"></script>
 </body>

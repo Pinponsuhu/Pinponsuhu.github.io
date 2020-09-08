@@ -12,7 +12,7 @@ function nav() {
 }
 
 function states() {
-  var requestOptions = {
+var requestOptions = {
     method: 'GET',
     redirect: 'follow'
   };
@@ -43,6 +43,7 @@ function states() {
 
       }
     })
+    
 }
 
 function first() {
@@ -64,4 +65,18 @@ function first() {
 function openStates() {
   document.getElementById('states').style.display = 'block';
   document.getElementById('home').style.display = 'none';
+  
+}
+function about(){
+  var abt = document.getElementById('about');
+  abt.style.height = '370px';
+  abt.style.width = '86%';
+  abt.style.overflowY = 'scroll';
+  abt.style.padding = '16px 16px';
+}
+function cancel(){
+  var abt = document.getElementById('about');
+  abt.style.height = '0';
+  abt.style.width = '0';
+  abt.style.padding = '0';
 }
