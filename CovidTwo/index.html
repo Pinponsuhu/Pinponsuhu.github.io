@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML</title>
+  <!-- HTML -->
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="states(); first();">
+  <div class="navv">
+    <p class="cng">CovidNG</p>
+    <p id="nav-btn" onclick="nav();">≡</p>
+  </div>
+  <div id="home">
+    <div id="nav-sec">
+      <p>Total Cases Recorded:</p>
+      <p id="TCR">---</p>
+    </div>
+    <div id="sec1">
+      <p>Total Deaths:</p>
+      <p id="TD">---</p>
+    </div>
+    <div id="sec2">
+      <p>Total Testing:</p>
+      <p id="TT">---</p>
+    </div>
+    <div id="sec3">
+      <p>Active Cases:</p>
+      <p id="AC">---</p>
+    </div>
+  </div>
+  <div id="states">
+    <table id="details">
+      <tr id="head">
+        <td>States</td>
+        <td>Active Cases</td>
+        <td>Discharged Cases</td>
+        <td>Deaths</td>
+      </tr>
+    </table>
+  </div>
+  <div class="me">
+    <p>Made with ❤ by Pinponsuhu Joseph</p>
+  </div>
+  <div id="nav-disp">
+    <a href="#" id="viewState" onclick="openStates();">States</a>
+    <a href="#">About</a>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
