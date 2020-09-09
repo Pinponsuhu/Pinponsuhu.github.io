@@ -185,9 +185,10 @@ tr {
   text-align: center;
 }
 
-#about h2 {
+#about h2, #states p {
   text-align: right;
-  font-size: 30px;
+  font-size: 38px;
+  color: #072964;
 }
 .writing a{
   display: inline-block;

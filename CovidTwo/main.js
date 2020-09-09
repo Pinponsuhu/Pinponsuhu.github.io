@@ -80,3 +80,8 @@ function cancel(){
   abt.style.width = '0';
   abt.style.padding = '0';
 }
+function cancel2(){
+  var atn1 = document.getElementById('states');
+  atn1.style.display = 'none';
+  document.getElementById('home').style.display = 'block';
+}
