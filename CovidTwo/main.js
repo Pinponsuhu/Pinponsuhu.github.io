@@ -20,7 +20,7 @@ var requestOptions = {
   fetch("https://covidnigeria.herokuapp.com/api", requestOptions)
     .then(response => response.json())
     .then(function(result) {
-      for (var i = 1; i <= 35; i++) {
+      for (var i = 0; i <= 35; i++) {
 
         var sec = document.createElement('TR');
         var subsec1 = document.createElement('TD');
