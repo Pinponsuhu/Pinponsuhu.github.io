@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML</title>
+  <!-- HTML -->
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="actn">
+    <table border="0" class="first">
+      <tr>
+        <td class="sin" onclick="sec()"><a href="#">Sign In</a></td>
+        <td class="sup" onclick="sec2()"><a href="#">Sign Up</a>
+        <td>
+      </tr>
+    </table>
+  </div>
+  <div class="sec" id="sec">
+    <div class="user">
+      <i class="fa fa-user"></i>
+    </div>
+    <h3>SIGN IN</h3>
+    <label>Username</label>
+    <input type="text" name="username" id="username" value="" placeholder="Pinponsuhu Joseph" />
+    <label>Password</label>
+    <input type="password" name="pwd" id="pwd" value="" placeholder="Passw0rd℅℅" />
+    <button type="submit">Login</button>
+    <a href="#">Forgot password?</a>
+  </div>
+  <div class="sec2" id="sec2">
+    <div class="user">
+      <i class="fa fa-user"></i>
+    </div>
+    <h3>SIGN UP</h3>
+    <label>Username</label>
+    <input type="text" name="username" id="username" value="" placeholder="Pinponsuhu Joseph" />
+    <label>E-mail</label>
+    <input type="email" name="email" id="email" value="" placeholder="something@email.com" />
+    <label>Password</label>
+    <input type="password" name="pwd" id="pwd" value="" placeholder="Passw0rd℅℅" />
+    <div class="bday">
+      <label>Birthday</label>
+      <input type="date" name="" id="" value="" />
+    </div>
+    <div class="gender">
+      <label>Gender</label>
+      <select name="gender" id="gender">
+        <option value="">Male</option>
+        <option value="">Female</option>
+        <option value="">Others</option>
+      </select>
+    </div>
+    <button type="submit">Submit</button>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>

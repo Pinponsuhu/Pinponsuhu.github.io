@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+#Search-bar{
+  height: 48px;
+  width: 96%;
+  margin: 15px auto;
+  box-shadow: 0 0 2px #182182;
+  background: #2B2E51;
+  border-radius: 8px;
+}
+#search{
+  display: inline-block;
+  height: 100%;
+  background: none;
+  width: 80%;
+  outline: none;
+  border-radius: 8px;
+  border: none;
+  color: #FFFFFF;
+  font-size: 15px;
+  padding-left: 6px;
+  box-sizing: border-box;
+}
