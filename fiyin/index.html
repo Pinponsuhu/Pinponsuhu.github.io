@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="tailwind.min.css">
+    <script src="main.js"></script>
+</head>
+<body class="bg-gray-100" onload="loaded()">
+    <nav class=" px-4 py-4 shadow-md fixed border-2 border-red-500 w-full bg-white">
+        <div class="flex justify-between justify-items-center " >
+        <div class="">
+            <h1 class="text-2xl font-semibold">Fiyin</h1>
+        </div>
+        <div class="-mt-4" id="openNav">
+            <svg viewBox = "0 0 100 80" width = "40" height = "50" onclick="navDisp()" class="cursor-pointer">
+                <rect width = "100" heigth ="10"></rect>
+                <rect y = "30" width="100" height="10"></rect>
+                <rect y = "60" width="100" height="10"></rect>
+                <rect y = "90" width="100" height="10"></rect>
+            </svg>
+        </div>
+        <div class="cursor-pointer" onclick="navClose()" id="closeBtn">
+            <h1 class="font-medium text-4xl">x</h1>
+        </div>
+    </div>
+    <div class="px-4 py-4" id="navLinks">
+        <li class="list-none mb-2"><a href="" class="text-gray-500 hover:text-red-500 text-xl">Home</a></li>
+        <li class="list-none mb-2"><a href="" class="text-gray-500 hover:text-red-500 text-xl">Testimonials</a></li>
+        <li class="list-none mb-4"><a href="" class="text-gray-500 hover:text-red-500 text-xl">Contact</a></li>
+        <a class="p-4 font-medium border-none text-white text-center bg-red-500 block mx-auto uppercase">book an appointment</a>
+
+    </div>
+    <div>
+
+    </div>
+    </nav>
+    <section class="px-8 py-2" >
+        <div class="border-2 px-4 py-8 bg-gray-200 mt-20 md:grid md:grid-cols-3 md:gap-16 md:px-10" >
+            <div class="md:col-span-2 md:mt-8">
+            <h2 class="font-semibold text-center md:text-left text-3xl mb-8 md:mb-10">What We Do Actually</h2>
+            <p class="md:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ipsum animi aliquam blanditiis quam ad temporibus velit a dolores. Repudiandae dolor at amet velit deserunt laboriosam. Amet sunt, omnis laborum eveniet numquam sapiente consectetur dolorem sed, ullam commodi vel. Fuga eaque, quidem deleniti error atque omnis quibusdam delectus earum, iure temporibus enim vero maxime! Vitae blanditiis velit autem animi commodi, nesciunt incidunt iure minus reiciendis harum optio sapiente eum tenetur omnis perferendis laudantium aperiam odio illo totam ducimus magni reprehenderit repudiandae sit eaque. Inventore facere unde, quaerat, corrupti sunt molestiae magnam voluptatem earum nesciunt possimus expedita error aliquam esse ad! Atque beatae modi libero deleniti dolores quod, nostrum, alias.</p>
+            <a href="" class="w-28 mt-6 md:mt-12 px-2 py-1 bg-red-500 rounded text-white uppercase text-sm flex justify-end  ">read more...</a>
+        </div>
+        <div class="py-8 px-4 bg-white rounded mt-2 md:col-span-1">
+            <h2 class="font-semibold text-center text-2xl mb-8">Opening Hours</h2>
+            <div class="pb-4 border-b-2 mt-2">
+                <h3 class="font-semibold uppercase">Monday</h3>
+                <p>8:00am - 11:00pm</p>
+            </div>
+            <div class="pb-4 border-b-2 mt-2">
+                <h3 class="font-semibold uppercase">Tuesday</h3>
+                <p>8:00am - 11:00pm</p>
+            </div>
+            <div class="pb-4 border-b-2 mt-2">
+                <h3 class="font-semibold uppercase">Wednesday</h3>
+                <p>8:00am - 11:00pm</p>
+            </div>
+            <div class="pb-4 border-b-2 mt-2">
+                <h3 class="font-semibold uppercase">Thursday</h3>
+                <p>8:00am - 11:00pm</p>
+            </div>
+            <div class="pb-4 border-b-2 mt-2">
+                <h3 class="font-semibold uppercase">friday</h3>
+                <p>8:00am - 11:00pm</p>
+            </div>
+            <div class="pb-4 border-b-2 mt-2">
+                <h3 class="font-semibold uppercase">Saturday</h3>
+                <p>8:00am - 11:00pm</p>
+            </div>
+            <div class="pb-4 mt-2">
+                <h3 class="font-semibold uppercase">Sunday</h3>
+                <p class="text-red-500 font-semibold">Closed</p>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="px-4 mt-8 md:grid md:grid-cols-2 md:gap-18">
+        <div class="md:col-span-1">
+        <h1 class="text-3xl font-bold mb-6 uppercase">our services</h1>
+        <p class="md:text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim exercitationem quos suscipit in reiciendis ullam, iusto porro assumenda officia quidem doloribus architecto hic sapiente! Temporibus corrupti incidunt quisquam error adipisci delectus hic unde ipsam nisi alias quam laboriosam omnis nesciunt ipsum veritatis facere suscipit expedita, accusamus tempore cum fugiat cupiditate distinctio. Ratione sunt officiis similique incidunt ipsam dolores perferendis ut obcaecati vitae dicta. Officia aliquam tenetur quis voluptates. Eaque, incidunt.</p>
+    </div>
+    <div class="md:col-span-1">
+        <div class="py-4 px-2 border-b-2 ">
+            <h2 class="font-semibold text-2xl" onclick="accordionOne()">Cognitive behavioral therapy</h2>
+            <p id="paraOne" class="mt-6 md:mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit aliquid earum hic, consectetur fugiat deleniti recusandae facere quibusdam cumque pariatur impedit voluptatem rerum iusto! Voluptas odit, eum saepe quasi accusantium perspiciatis voluptatem quos quidem debitis totam aperiam illo aliquam quia.</p>
+            <p id="countOne">1</p>
+            <p id="countTwo">2</p>
+        </div>
+        <div class="py-4 px-2 border-b-2">
+            <h2 class="font-semibold text-2xl" onclick="accordionTwo()">Employee Assistance Program</h2>
+            <p id="paraTwo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit aliquid earum hic, consectetur fugiat deleniti recusandae facere quibusdam cumque pariatur impedit voluptatem rerum iusto! Voluptas odit, eum saepe quasi accusantium perspiciatis voluptatem quos quidem debitis totam aperiam illo aliquam quia.</p>
+        </div>
+        <div class="py-4 px-2 border-b-2">
+            <h2 class="font-semibold text-2xl">Adolescents Career Guidance</h2>
+            <p id="paraThree">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit aliquid earum hic, consectetur fugiat deleniti recusandae facere quibusdam cumque pariatur impedit voluptatem rerum iusto! Voluptas odit, eum saepe quasi accusantium perspiciatis voluptatem quos quidem debitis totam aperiam illo aliquam quia.</p>
+        </div>
+        <div class="py-4 px-2 border-b-2">
+            <h2 class="font-semibold text-2xl">Substance Users Support Program</h2>
+            <p id="paraFour">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit aliquid earum hic, consectetur fugiat deleniti recusandae facere quibusdam cumque pariatur impedit voluptatem rerum iusto! Voluptas odit, eum saepe quasi accusantium perspiciatis voluptatem quos quidem debitis totam aperiam illo aliquam quia.</p>
+        </div>
+    </div>
+    </section>
+    <section>
+        <h2 class="font-semibold text-2xl px-4 mt-10 mb-6">Patient Testimonials</h2>
+        <div class="md:grid md:grid-cols-2 md:gap-20">
+        <div class="flex justfy-around px-4 md:col-span-1">
+            <div class="mr-10">
+                <img src="" alt="missing" class="w-20 h-20 bg-gray-700 rounded-full">
+            </div>
+            <div class="">
+                <p class="italic">
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet expedita quos sed omnis tenetur quo, autem quae odit temporibus sunt."</p>
+                <h2 class="font-semibold text-xl uppercase">-Fiyin Fiyin</h2>
+                <p class="text-gray-400"><span class="text-gray-100">-</span>Envato Inc</p>
+
+            </div>
+        </div>
+        <div class="flex justify-around px-4 md:col-span-1">
+            <div class="mr-10">
+                <img src="" alt="missing" class="w-20 h-20 bg-gray-700 rounded-full">
+            </div>
+            <div class="">
+                <p class="italic">
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet expedita quos sed omnis tenetur quo, autem quae odit temporibus sunt."</p>
+                <h2 class="font-semibold text-xl uppercase">-Fiyin Fiyin</h2>
+                <p class="text-gray-400"><span class="text-gray-100">-</span>Envato Inc</p>
+
+            </div>
+        </div>
+    </div>
+        <a href="" class="mt-6 px-2 py-1 bg-red-500 rounded text-white uppercase text-sm md:ml-6">more patients feedbacks</a>
+    </section>
+    <section class="mt-8 md:grid md:grid-cols-3 md:gap-4" >
+        <img src="" alt="missing" class="md:col-span-1 h-full w-full bg-gray-800">
+        <div class="bg-red-500 px-12 py-8 md:col-span-2">
+            <h1 class="text-white text-3xl font-semibold mb-8">Book an Appointment</h1>
+            <form action="" class="md:grid md:grid-cols-3 md:gap-4">
+                <label for="" class="md:col-span-1 text-white text-lg block mb-1">Name:</label>
+                <input type="text" name="name" placeholder="Your name..." id="" class="md:col-span-1 h-12 w-full block rounded px-4 py-2">
+                <label for=""  class="md:col-span-1 text-white text-lg block mb-1">Phone Number:</label>
+                <input type="password" name="phoneNo" id="" class="md:col-span-1 h-12 w-full block rounded px-4 py-2" placeholder="Your phone number...">
+                <label for=""  class="md:col-span-1 text-white text-lg block mb-1">E-mail Address:</label>
+                <input type="email" name="name" id="" class="md:col-span-1 h-12 w-full block rounded px-4 py-2" placeholder="Your email...">
+                <label for=""  class="md:col-span-1 text-white text-lg block mb-1">Services</label>
+                <select name="services" id="" class="md:col-span-1 h-12 w-full block rounded px-4 py-2">
+                    <option value="">--Select One--</option>
+                </select>
+                <label for=""  class="md:col-span-1 text-white text-lg block mb-1">Status:</label>
+                <select name="status" id="" class="h-12 w-full block rounded px-4 py-2">
+                    <option value="">--Select One--</option>
+                </select>
+                <label for=""  class="text-white text-lg block mb-1 mt-2">How Would You Like To Be Responded To?</label>
+                <input type="radio" name="phoneCheck" id="">
+                <label for="" class="text-white text-lg mb-1">Phone</label>
+                <input type="radio" name="emailCheck" id="" class="ml-14">
+                <label for="" class="text-white text-lg  mb-1">Email</label>
+                <label for="" class="text-white text-lg block mb-1 mt-4">Message:</label>
+                <textarea name="message" id="" cols="12" rows="10" placeholder="Your message..." class="w-full block rounded px-4 py-2"></textarea>
+                <button class="bg-gray-100 rounded block w-56 font-semibold uppercase px-8 py-4 mx-auto mt-8 hover:bg-black hover:text-white">confirm booking</button>
+            </form>
+        </div>
+    </section>
+    <section>
+        <img src="" alt="missing">
+        <div class="px-4">
+            <h2 class="font-bold text-2xl mt-10 mb-6 uppercase">careers</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi praesentium aperiam voluptatem exercitationem possimus nulla hic distinctio dicta, cumque, nostrum blanditiis delectus soluta. Non sunt debitis nobis laudantium, quo nam.</p>
+        </div>
+    </section>
+    <section class="mt-10 px-4 py-8">
+        <h2 class="font-semibold text-2xl mb-8">Send us an E-mail</h2>
+        <form action="" >
+            <label for="" class="text-red-500 text-lg block mb-1">Name:</label>
+                <input type="text" name="name" placeholder="Your name..." id="" class="h-12 w-full block rounded px-4 py-2 border-2 border-red-500">
+                <label for=""  class="text-red-500 text-lg block mb-1">Phone Number:</label>
+                <input type="password" name="phoneNo" id="" class="h-12 w-full block rounded px-4 py-2 border-2 border-red-500" placeholder="Your phone number...">
+                <label for=""  class="text-red-500 text-lg block mb-1">E-mail Address:</label>
+                <input type="email" name="name" id="" class="h-12 w-full block rounded px-4 py-2 border-2 border-red-500" placeholder="Your email...">
+                <label for="" class="text-red-500 text-lg block mb-1">Location:</label>
+                <input type="text" name="location" placeholder="Your name..." id="" class="h-12 w-full block rounded px-4 py-2 border-2 border-red-500">
+                <label for="" class="text-red-500 text-lg block mb-1" >Your Enquiry:</label>
+                <textarea name="enquiry" id="" cols="12" rows="10" class="w-full block rounded px-4 py-2 border-2 border-red-500 mb-8" placeholder="Your Enquiry message"></textarea>
+                <button type="submit" class="uppercase px-8 py-2 border-2 border-red-500 hover:bg-red-500 hover:border-red-800 hover:text-white rounded">send</button>
+        </form>
+    </section>
+    <section class="px-4 py-8">
+        <div>
+            <h3 class="text-2xl font-semibold mb-4">Subscribe to our Newsletter</h3>
+            <form action="">
+                <input type="email" class="h-12 w-full bg-red-300 px-4 rounded" placeholder="Your E-mail Address">
+                <button type="submit" class="uppercase  bg-red-500 text-white font-semibold rounded mt-2 flex px-8 py-2 mx-auto">Subscribe</button>
+            </form>
+        </div>
+        <div class="flex justify-between mt-8">
+            <div >
+                <li class="list-none mb-4"><a href="#" class="text-red-500 text-xl ">Home</a></li>
+                <li class="list-none"><a href="#" class="text-red-500 text-xl ">Testimonials</a></li>
+            </div>
+            <div>
+                <li class="list-none mb-4"><a href="#" class="text-red-500 text-xl ">Call Us</a></li>
+                <li class="list-none"><a href="#" class="text-red-500 text-xl ">Contact</a></li>
+            </div>
+        </div>
+    </section>
+    <section class="px-4">
+        <h3 class="text-red-500 font-semibold text-xl uppercase">call us:</h3>
+        <p class="lg\:text-lg mb-4">+234(0)9084572272</p>
+        <h3 class="text-red-500 font-semibold text-xl uppercase">send an e-mail</h3>
+        <p class="text-lg uppercase">info@fyin.com</p>
+        <div>
+            <img src="" alt="">
+            <p class="font-semibold text-blue-500 text-lg">Like us</p>
+            <p class="text-blue-500">on Facebook</p>
+        </div>
+        <div>
+            <img src="" alt="">
+            <p class="font-semibold text-red-500 text-lg">Follow us</p>
+            <p class="text-red-500">on Instagram</p>
+        </div>
+    </section>
+</body>
+</html>
