@@ -8,28 +8,28 @@
     <script src="main.js"></script>
 </head>
 <body class="bg-gray-100" onload="loaded()">
-    <nav class=" px-4 py-4 shadow-md fixed border-2 border-red-500 w-full bg-white">
+    <nav class=" px-4 py-4 shadow-md fixed  w-full bg-white lg:grid lg:grid-cols-4 lg:items-center lg:py-0">
         <div class="flex justify-between justify-items-center " >
-        <div class="">
+        <div class="md:col-span-2">
             <h1 class="text-2xl font-semibold">Fiyin</h1>
         </div>
         <div class="-mt-4" id="openNav">
-            <svg viewBox = "0 0 100 80" width = "40" height = "50" onclick="navDisp()" class="cursor-pointer">
+            <svg viewBox = "0 0 100 80" width = "40" height = "50" onclick="navDisp()" class="cursor-pointer lg:hidden">
                 <rect width = "100" heigth ="10"></rect>
                 <rect y = "30" width="100" height="10"></rect>
                 <rect y = "60" width="100" height="10"></rect>
                 <rect y = "90" width="100" height="10"></rect>
             </svg>
         </div>
-        <div class="cursor-pointer" onclick="navClose()" id="closeBtn">
-            <h1 class="font-medium text-4xl">x</h1>
+        <div class="cursor-pointer md:hidden" onclick="navClose()" id="closeBtn">
+            <h1 class="font-medium text-4xl lg:text-white">x</h1>
         </div>
     </div>
-    <div class="px-4 py-4" id="navLinks">
-        <li class="list-none mb-2"><a href="" class="text-gray-500 hover:text-red-500 text-xl">Home</a></li>
-        <li class="list-none mb-2"><a href="" class="text-gray-500 hover:text-red-500 text-xl">Testimonials</a></li>
-        <li class="list-none mb-4"><a href="" class="text-gray-500 hover:text-red-500 text-xl">Contact</a></li>
-        <a class="p-4 font-medium border-none text-white text-center bg-red-500 block mx-auto uppercase">book an appointment</a>
+    <div class="px-4 py-4 md:col-span-3 hidden lg:block  items-end" id="navLinks">
+        <li class="md:ml-8 list-none mb-2 md:inline-block md:px-6 "><a href="" class="text-gray-500 hover:text-green-500 text-xl">Home</a></li>
+        <li class="list-none mb-2 md:inline-block md:px-6 "><a href="" class="text-gray-500 hover:text-green-500 text-xl">Testimonials</a></li>
+        <li class="list-none mb-4 md:inline-block md:px-6 "><a href="" class="text-gray-500 hover:text-green-500 text-xl">Contact</a></li>
+        <a class="md:px-6 md:inline-block p-4 font-medium border-none text-white text-center bg-green-500 block mx-auto uppercase rounded">book an appointment</a>
 
     </div>
     <div>
@@ -40,8 +40,8 @@
         <div class="border-2 px-4 py-8 bg-gray-200 mt-20 md:grid md:grid-cols-3 md:gap-16 md:px-10" >
             <div class="md:col-span-2 md:mt-8">
             <h2 class="font-semibold text-center md:text-left text-3xl mb-8 md:mb-10">What We Do Actually</h2>
-            <p class="md:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ipsum animi aliquam blanditiis quam ad temporibus velit a dolores. Repudiandae dolor at amet velit deserunt laboriosam. Amet sunt, omnis laborum eveniet numquam sapiente consectetur dolorem sed, ullam commodi vel. Fuga eaque, quidem deleniti error atque omnis quibusdam delectus earum, iure temporibus enim vero maxime! Vitae blanditiis velit autem animi commodi, nesciunt incidunt iure minus reiciendis harum optio sapiente eum tenetur omnis perferendis laudantium aperiam odio illo totam ducimus magni reprehenderit repudiandae sit eaque. Inventore facere unde, quaerat, corrupti sunt molestiae magnam voluptatem earum nesciunt possimus expedita error aliquam esse ad! Atque beatae modi libero deleniti dolores quod, nostrum, alias.</p>
-            <a href="" class="w-28 mt-6 md:mt-12 px-2 py-1 bg-red-500 rounded text-white uppercase text-sm flex justify-end  ">read more...</a>
+            <p class="md:text-xl">Prime Health Systems is a rising behavioral health organization fashioned to provide psychological services and committed to bring out the best version of every individual. Our services are provided to project the importance of mental health by helping individuals maintain a positive behavioral lifestyle hindering precipitating factors of mental illness. We currently provide cognitive behavioral therapy virtually to people undergoing mild-moderate behavioral health challenges, whilst reaching out to a larger community of people using psycho education and generally increasing awareness in the country. We are a practicing positivist of psychological well-being.</p>
+            <a href="" class="w-28 mt-6 md:mt-12 px-2 py-1 bg-green-500 rounded text-white uppercase text-sm flex justify-end  ">read more...</a>
         </div>
         <div class="py-8 px-4 bg-white rounded mt-2 md:col-span-1">
             <h2 class="font-semibold text-center text-2xl mb-8">Opening Hours</h2>
@@ -71,7 +71,7 @@
             </div>
             <div class="pb-4 mt-2">
                 <h3 class="font-semibold uppercase">Sunday</h3>
-                <p class="text-red-500 font-semibold">Closed</p>
+                <p class="text-green-500 font-semibold">Closed</p>
             </div>
         </div>
         </div>
@@ -79,35 +79,35 @@
     <section class="px-4 mt-8 md:grid md:grid-cols-2 md:gap-18">
         <div class="md:col-span-1">
         <h1 class="text-3xl font-bold mb-6 uppercase">our services</h1>
-        <p class="md:text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim exercitationem quos suscipit in reiciendis ullam, iusto porro assumenda officia quidem doloribus architecto hic sapiente! Temporibus corrupti incidunt quisquam error adipisci delectus hic unde ipsam nisi alias quam laboriosam omnis nesciunt ipsum veritatis facere suscipit expedita, accusamus tempore cum fugiat cupiditate distinctio. Ratione sunt officiis similique incidunt ipsam dolores perferendis ut obcaecati vitae dicta. Officia aliquam tenetur quis voluptates. Eaque, incidunt.</p>
+        <p class="md:text-xl">As an organization, our priority is to assist our clients take charge of their mental health by providing them with engaging services along side our capable board of psychologists.
+            We do not try to fix our clients, tell them what they must do, pretend we know more than they do, have all the answers, assume what is best for them and make all the stuff go away. Rather, we help our clients determine the cause of the problem whilst being reminded that they are not broken, give room to access their own wisdom, support them in figuring out what do, recognize that they are the expert on their own life, honor that we don’t know it all, collaborate with them on how to make the hard struggles easier to handle and cope with and develop treatment plans that serves as a guide to recovery.
+            We provide the following services:</p>
     </div>
     <div class="md:col-span-1">
         <div class="py-4 px-2 border-b-2 ">
-            <h2 class="font-semibold text-2xl" onclick="accordionOne()">Cognitive behavioral therapy</h2>
+            <h2 class="font-semibold text-2xl cursor-pointer" onclick="accordionOne()"><span class="" id="showOne">+</span> Cognitive behavioral therapy</h2>
             <p id="paraOne" class="mt-6 md:mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit aliquid earum hic, consectetur fugiat deleniti recusandae facere quibusdam cumque pariatur impedit voluptatem rerum iusto! Voluptas odit, eum saepe quasi accusantium perspiciatis voluptatem quos quidem debitis totam aperiam illo aliquam quia.</p>
-            <p id="countOne">1</p>
-            <p id="countTwo">2</p>
         </div>
         <div class="py-4 px-2 border-b-2">
-            <h2 class="font-semibold text-2xl" onclick="accordionTwo()">Employee Assistance Program</h2>
-            <p id="paraTwo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit aliquid earum hic, consectetur fugiat deleniti recusandae facere quibusdam cumque pariatur impedit voluptatem rerum iusto! Voluptas odit, eum saepe quasi accusantium perspiciatis voluptatem quos quidem debitis totam aperiam illo aliquam quia.</p>
+            <h2 class="font-semibold text-2xl cursor-pointer" onclick="accordionTwo()"><span class="" id="showTwo">+</span>Employee Assistance Program</h2>
+            <p id="paraTwo" class="mt-6 md:mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit aliquid earum hic, consectetur fugiat deleniti recusandae facere quibusdam cumque pariatur impedit voluptatem rerum iusto! Voluptas odit, eum saepe quasi accusantium perspiciatis voluptatem quos quidem debitis totam aperiam illo aliquam quia.</p>
         </div>
         <div class="py-4 px-2 border-b-2">
-            <h2 class="font-semibold text-2xl">Adolescents Career Guidance</h2>
-            <p id="paraThree">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit aliquid earum hic, consectetur fugiat deleniti recusandae facere quibusdam cumque pariatur impedit voluptatem rerum iusto! Voluptas odit, eum saepe quasi accusantium perspiciatis voluptatem quos quidem debitis totam aperiam illo aliquam quia.</p>
+            <h2 class="font-semibold text-2xl cursor-pointer" onclick="accordionThree()"><span class="" id="showThree">+</span>Adolescents Career Guidance</h2>
+            <p id="paraThree" class="mt-6 md:mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit aliquid earum hic, consectetur fugiat deleniti recusandae facere quibusdam cumque pariatur impedit voluptatem rerum iusto! Voluptas odit, eum saepe quasi accusantium perspiciatis voluptatem quos quidem debitis totam aperiam illo aliquam quia.</p>
         </div>
         <div class="py-4 px-2 border-b-2">
-            <h2 class="font-semibold text-2xl">Substance Users Support Program</h2>
-            <p id="paraFour">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit aliquid earum hic, consectetur fugiat deleniti recusandae facere quibusdam cumque pariatur impedit voluptatem rerum iusto! Voluptas odit, eum saepe quasi accusantium perspiciatis voluptatem quos quidem debitis totam aperiam illo aliquam quia.</p>
+            <h2 class="font-semibold text-2xl cursor-pointer" onclick="accordionFour()"><span class="" id="showFour">+</span>Substance Users Support Program</h2>
+            <p id="paraFour"class=" mt-6 md_mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit aliquid earum hic, consectetur fugiat deleniti recusandae facere quibusdam cumque pariatur impedit voluptatem rerum iusto! Voluptas odit, eum saepe quasi accusantium perspiciatis voluptatem quos quidem debitis totam aperiam illo aliquam quia.</p>
         </div>
     </div>
     </section>
     <section>
         <h2 class="font-semibold text-2xl px-4 mt-10 mb-6">Patient Testimonials</h2>
         <div class="md:grid md:grid-cols-2 md:gap-20">
-        <div class="flex justfy-around px-4 md:col-span-1">
+        <div class="flex justfy-around px-4 md:col-span-1 mb-6">
             <div class="mr-10">
-                <img src="" alt="missing" class="w-20 h-20 bg-gray-700 rounded-full">
+                <img src="./assets/collis.jpg" alt="missing" class="w-40 h-18 rounded-full">
             </div>
             <div class="">
                 <p class="italic">
@@ -118,8 +118,8 @@
             </div>
         </div>
         <div class="flex justify-around px-4 md:col-span-1">
-            <div class="mr-10">
-                <img src="" alt="missing" class="w-20 h-20 bg-gray-700 rounded-full">
+            <div class="mr-10 border-2">
+                <img src="./assets/john.jpg" alt="missing" class=" w-40 h-18 bg-gray-700 rounded-full">
             </div>
             <div class="">
                 <p class="italic">
@@ -130,85 +130,89 @@
             </div>
         </div>
     </div>
-        <a href="" class="mt-6 px-2 py-1 bg-red-500 rounded text-white uppercase text-sm md:ml-6">more patients feedbacks</a>
+        <a href="" class="mt-6 px-2 py-1 bg-green-500 rounded text-white uppercase text-sm md:ml-6">more patients feedbacks</a>
     </section>
-    <section class="mt-8 md:grid md:grid-cols-3 md:gap-4" >
-        <img src="" alt="missing" class="md:col-span-1 h-full w-full bg-gray-800">
-        <div class="bg-red-500 px-12 py-8 md:col-span-2">
-            <h1 class="text-white text-3xl font-semibold mb-8">Book an Appointment</h1>
-            <form action="" class="md:grid md:grid-cols-3 md:gap-4">
-                <label for="" class="md:col-span-1 text-white text-lg block mb-1">Name:</label>
-                <input type="text" name="name" placeholder="Your name..." id="" class="md:col-span-1 h-12 w-full block rounded px-4 py-2">
-                <label for=""  class="md:col-span-1 text-white text-lg block mb-1">Phone Number:</label>
-                <input type="password" name="phoneNo" id="" class="md:col-span-1 h-12 w-full block rounded px-4 py-2" placeholder="Your phone number...">
-                <label for=""  class="md:col-span-1 text-white text-lg block mb-1">E-mail Address:</label>
-                <input type="email" name="name" id="" class="md:col-span-1 h-12 w-full block rounded px-4 py-2" placeholder="Your email...">
-                <label for=""  class="md:col-span-1 text-white text-lg block mb-1">Services</label>
-                <select name="services" id="" class="md:col-span-1 h-12 w-full block rounded px-4 py-2">
+    <section class="mt-8 md:grid md:grid-cols-2 md:gap-4 md:px-8" >
+        <img src="./assets/section-bg.jpg" alt="missing" class="object-cover md:col-span-1 w-full h-full">
+        <div class="bg-green-500 px-12 py-8 ">
+            <h1 class="text-white text-3xl font-semibold mb-6 ">Book an Appointment</h1>
+            <form action="" class="md:grid md:grid-cols-2">
+                <label for="" class=" text-white text-lg block mb-1 md:col-span-1 ">Name:</label>
+                <input type="text" name="name" placeholder="Your name..." id="" class="md:mt-2 md:col-span-1 h-12 md:h-10 w-full block rounded px-4 py-2">
+                <label for=""  class=" text-white text-lg block mb-1 md:col-span-1 md:mt-2">Phone Number:</label>
+                <input type="password" name="phoneNo" id="" class="md:mt-2 md-col-span-1 h-12 md:h-10 w-full block rounded px-4 py-2" placeholder="Your phone number...">
+                <label for=""  class=" text-white text-lg block mb-1 md:col-span-1 md:mt-2">E-mail Address:</label>
+                <input type="email" name="name" id="" class="md:mt-2 h-12 md:h-10 w-full block rounded px-4 py-2 md-col-span-1" placeholder="Your email...">
+                <label for=""  class=" text-white text-lg block mb-1 md:col-span-1 md:mt-2">Services</label>
+                <select name="services" id="" class="md:mt-2 h-12 md:h-10 w-full block rounded px-4 py-2 md:mt-2 md:col-span-1">
                     <option value="">--Select One--</option>
                 </select>
                 <label for=""  class="md:col-span-1 text-white text-lg block mb-1">Status:</label>
-                <select name="status" id="" class="h-12 w-full block rounded px-4 py-2">
+                <select name="status" id="" class="md:mt-2 h-12 md:h-10 w-full block rounded px-4 py-2">
                     <option value="">--Select One--</option>
                 </select>
-                <label for=""  class="text-white text-lg block mb-1 mt-2">How Would You Like To Be Responded To?</label>
-                <input type="radio" name="phoneCheck" id="">
-                <label for="" class="text-white text-lg mb-1">Phone</label>
-                <input type="radio" name="emailCheck" id="" class="ml-14">
-                <label for="" class="text-white text-lg  mb-1">Email</label>
-                <label for="" class="text-white text-lg block mb-1 mt-4">Message:</label>
-                <textarea name="message" id="" cols="12" rows="10" placeholder="Your message..." class="w-full block rounded px-4 py-2"></textarea>
-                <button class="bg-gray-100 rounded block w-56 font-semibold uppercase px-8 py-4 mx-auto mt-8 hover:bg-black hover:text-white">confirm booking</button>
+                <label for=""  class="md:col-span-2 text-white text-lg block mb-1 mt-2">How Would You Like To Be Responded To?</label>
+                <label for="" class="text-white text-lg mb-1 col-span-1">Phone:</label>
+                <input type="radio" name="phoneCheck" id="" class="col-span-1">
+                <label for="" class="text-white text-lg  mb-1 col-span-1">Email:</label>
+                <input type="radio" name="emailCheck" id="" class="ml-14 col-span-1 md:ml-0">
+                
+                <label for="" class="md:col-span-2 text-white text-lg block mb-1 mt-2">Message:</label>
+                <textarea name="message" id="" cols="12" rows="10" placeholder="Your message..." class="md:col-span-2 w-full block rounded px-4 py-2 md:h-24"></textarea>
+                <button class="bg-gray-100 rounded block w-56 font-semibold uppercase px-8 py-4 mx-auto mt-8 hover:bg-black hover:text-white md:mt-2 md:col-span-2">confirm booking</button>
             </form>
         </div>
     </section>
-    <section>
-        <img src="" alt="missing">
-        <div class="px-4">
+    <section class="md:grid md:grid-cols-3 md:px-4">
+        <img src="./assets/doctor.jpg" alt="missing" class="md:col-span-1 md:gap-6">
+        <div class="px-4 md:col-span-2 md:w-full border-2">
             <h2 class="font-bold text-2xl mt-10 mb-6 uppercase">careers</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi praesentium aperiam voluptatem exercitationem possimus nulla hic distinctio dicta, cumque, nostrum blanditiis delectus soluta. Non sunt debitis nobis laudantium, quo nam.</p>
+            <p class="text-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam perferendis voluptate eum ipsum at, ea mollitia impedit maiores veniam vero sed blanditiis repellendus provident rerum, est iusto ab autem dolorem sapiente eveniet. Iusto, voluptatem aspernatur debitis provident ducimus sapiente eos!</p>
         </div>
     </section>
-    <section class="mt-10 px-4 py-8">
-        <h2 class="font-semibold text-2xl mb-8">Send us an E-mail</h2>
-        <form action="" >
-            <label for="" class="text-red-500 text-lg block mb-1">Name:</label>
-                <input type="text" name="name" placeholder="Your name..." id="" class="h-12 w-full block rounded px-4 py-2 border-2 border-red-500">
-                <label for=""  class="text-red-500 text-lg block mb-1">Phone Number:</label>
-                <input type="password" name="phoneNo" id="" class="h-12 w-full block rounded px-4 py-2 border-2 border-red-500" placeholder="Your phone number...">
-                <label for=""  class="text-red-500 text-lg block mb-1">E-mail Address:</label>
-                <input type="email" name="name" id="" class="h-12 w-full block rounded px-4 py-2 border-2 border-red-500" placeholder="Your email...">
-                <label for="" class="text-red-500 text-lg block mb-1">Location:</label>
-                <input type="text" name="location" placeholder="Your name..." id="" class="h-12 w-full block rounded px-4 py-2 border-2 border-red-500">
-                <label for="" class="text-red-500 text-lg block mb-1" >Your Enquiry:</label>
-                <textarea name="enquiry" id="" cols="12" rows="10" class="w-full block rounded px-4 py-2 border-2 border-red-500 mb-8" placeholder="Your Enquiry message"></textarea>
-                <button type="submit" class="uppercase px-8 py-2 border-2 border-red-500 hover:bg-red-500 hover:border-red-800 hover:text-white rounded">send</button>
+    <section class="mt-10 px-4 md:px-80 py-8">
+        <h2 class="font-semibold text-2xl mb-8 md:pl-8">Send us an E-mail</h2>
+        <form action="" class="md:px-8">
+            <label for="" class="text-gray-500 text-lg block mb-1">Name:</label>
+                <input type="text" name="name" placeholder="Your name..." id="" class="h-12 w-full block rounded px-4 py-2 border-2 border-gray-500">
+                <label for=""  class="text-gray-500 text-lg block mb-1">Phone Number:</label>
+                <input type="password" name="phoneNo" id="" class="h-12 w-full block rounded px-4 py-2 border-2 border-gray-500" placeholder="Your phone number...">
+                <label for=""  class="text-gray-500 text-lg block mb-1">E-mail Address:</label>
+                <input type="email" name="name" id="" class="h-12 w-full block rounded px-4 py-2 border-2 border-gray-500" placeholder="Your email...">
+                <label for="" class="text-gray-500 text-lg block mb-1">Location:</label>
+                <input type="text" name="location" placeholder="Your name..." id="" class="h-12 w-full block rounded px-4 py-2 border-2 border-gray-500">
+                <label for="" class="text-gray-500 text-lg block mb-1" >Your Enquiry:</label>
+                <textarea name="enquiry" id="" cols="12" rows="10" class="w-full block rounded px-4 py-2 border-2 border-gray-500 mb-8" placeholder="Your Enquiry message"></textarea>
+                <button type="submit" class="uppercase px-8 py-2 border-2 border-green-500 hover:bg-green-500 hover:border-green-800 hover:text-white rounded">send</button>
         </form>
     </section>
-    <section class="px-4 py-8">
-        <div>
+    <section class="px-4 py-8 md:grid md:grid-cols-3  md:align-baseline  bg-green-500 text-white ">
+        <div class="md:col-span-1">
             <h3 class="text-2xl font-semibold mb-4">Subscribe to our Newsletter</h3>
             <form action="">
-                <input type="email" class="h-12 w-full bg-red-300 px-4 rounded" placeholder="Your E-mail Address">
-                <button type="submit" class="uppercase  bg-red-500 text-white font-semibold rounded mt-2 flex px-8 py-2 mx-auto">Subscribe</button>
+                <input type="email" class="h-12 w-full border-2 border-gray-500 px-4 rounded" placeholder="Your E-mail Address">
+                <button type="submit" class="uppercase  bg-white text-green-500 font-semibold rounded mt-2 flex px-8 py-2 mx-auto">Subscribe</button>
             </form>
         </div>
-        <div class="flex justify-between mt-8">
+        <div class="flex justify-around mt-8 md:col-span-2 md:justify-around">
             <div >
-                <li class="list-none mb-4"><a href="#" class="text-red-500 text-xl ">Home</a></li>
-                <li class="list-none"><a href="#" class="text-red-500 text-xl ">Testimonials</a></li>
+                <li class="list-none mb-4"><a href="#" class=" text-xl">- Home</a></li>
+                <li class="list-none"><a href="#" class=" text-xl ">- Testimonials</a></li>
             </div>
             <div>
-                <li class="list-none mb-4"><a href="#" class="text-red-500 text-xl ">Call Us</a></li>
-                <li class="list-none"><a href="#" class="text-red-500 text-xl ">Contact</a></li>
+                <li class="list-none mb-4"><a href="#" class=" text-xl ">- Call Us</a></li>
+                <li class="list-none"><a href="#" class=" text-xl ">- Contact</a></li>
             </div>
         </div>
     </section>
-    <section class="px-4">
-        <h3 class="text-red-500 font-semibold text-xl uppercase">call us:</h3>
-        <p class="lg\:text-lg mb-4">+234(0)9084572272</p>
-        <h3 class="text-red-500 font-semibold text-xl uppercase">send an e-mail</h3>
+    <section class="px-4 md:grid md:grid-cols-2 bg-green-500 text-white">
+        <div class="md:col-span-1">
+        <h3 class="font-semibold text-xl uppercase">call us:</h3>
+        <p class="md:text-lg mb-4">+234(0)9084572272</p>
+        <h3 class="font-semibold text-xl uppercase">send an e-mail</h3>
         <p class="text-lg uppercase">info@fyin.com</p>
+    </div>
+    <div class="md:col-span-1">
         <div>
             <img src="" alt="">
             <p class="font-semibold text-blue-500 text-lg">Like us</p>
@@ -216,9 +220,10 @@
         </div>
         <div>
             <img src="" alt="">
-            <p class="font-semibold text-red-500 text-lg">Follow us</p>
+            <p class="font-semibold text-green-500 text-lg">Follow us</p>
             <p class="text-red-500">on Instagram</p>
         </div>
+    </div>
     </section>
 </body>
 </html>

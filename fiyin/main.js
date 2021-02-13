@@ -3,10 +3,7 @@ function loaded(){
     document.getElementById("paraTwo").style.display = "none";
     document.getElementById("paraThree").style.display = "none";
     document.getElementById("paraFour").style.display = "none";
-    document.getElementById("navLinks").style.display = "none";
     document.getElementById("closeBtn").style.display = "none";   
-    document.getElementById("countOne").style.display = "none";   
-    document.getElementById("countTwo").style.display = "none";   
 }
 function navDisp(){
     document.getElementById("navLinks").style.display = "block";
@@ -19,15 +16,62 @@ function navClose(){
     document.getElementById("closeBtn").style.display = "none";
 }
 function accordionOne(){
-    var count = parseInt(document.getElementById("countOne"));
-    var count2 = parseInt(document.getElementById("countTwo"));
-    if(count = 1){
-    document.getElementById("paraOne").style.display = "block";
-}
-  else if(count2 = 2){
-        document.getElementById("paraOne").style.display = "none";
-    }
+    var show = document.getElementById("showOne");
+   if(show.innerHTML == "+"){
+       document.getElementById("paraOne").style.display = "block";
+     /*  document.getElementById("paraThree").style.display = "none";
+     document.getElementById("paraTwo").style.display = "none";
+     document.getElementById("paraFour").style.display = "none"; */
+       show.innerHTML = "-";
+   }
+   else{
+    document.getElementById("paraOne").style.display = "none";
+    show.innerHTML = "+";
+   }
 }
 function accordionTwo(){
-    document.getElementById("paraTwo").style.display = "block"
+    var show = document.getElementById("showTwo");
+    if(show.innerHTML == "+"){
+        document.getElementById("paraTwo").style.display = "block";
+       /* document.getElementById("paraThree").style.display = "none";
+     document.getElementById("paraOne").style.display = "none";
+     document.getElementById("paraFour").style.display = "none"; */
+        show.innerHTML = "-";
+    }
+    else{
+     document.getElementById("paraTwo").style.display = "none";
+     show.innerHTML = "+";
+    }
+
 }
+function accordionThree(){
+    var show = document.getElementById("showThree");
+    if(show.innerHTML == "+"){
+        document.getElementById("paraThree").style.display = "block";
+        /*document.getElementById("paraTwo").style.display = "none";
+        document.getElementById("paraOne").style.display = "none";
+        document.getElementById("paraFour").style.display = "none"; */
+        show.innerHTML = "-"; 
+    }
+    else{
+     document.getElementById("paraThree").style.display = "none";
+     show.innerHTML = "+";
+    }
+    if(document.getElementById("paraThree").style.display == "none"){
+        show.innerHTML = "+";
+    }
+}
+    function accordionFour(){
+        var show = document.getElementById("showFour");
+        if(show.innerHTML == "+"){
+            document.getElementById("paraFour").style.display = "block";
+        /*    document.getElementById("paraThree").style.display = "none";
+     document.getElementById("paraTwo").style.display = "none";
+     document.getElementById("paraOne").style.display = "none"; */
+            show.innerHTML = "-";
+        }
+        else{
+         document.getElementById("paraFour").style.display = "none";
+         show.innerHTML = "+";
+        }
+    }
