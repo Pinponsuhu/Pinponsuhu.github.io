@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="tailwind.min.css">
+    <script src="main.js"></script>
+</head>
+<body class="bg-gray-100" onload="loaded()">
+    <nav class=" px-4 py-4 shadow-md fixed  w-full bg-white lg:grid lg:grid-cols-4 lg:items-center lg:py-0">
+        <div class="flex justify-between justify-items-center " >
+        <div class="md:col-span-2">
+            <h1 class="text-2xl font-semibold">Fiyin</h1>
+        </div>
+        <div class="-mt-4" id="openNav">
+            <svg viewBox = "0 0 100 80" width = "40" height = "50" onclick="navDisp()" class="cursor-pointer lg:hidden">
+                <rect width = "100" heigth ="10"></rect>
+                <rect y = "30" width="100" height="10"></rect>
+                <rect y = "60" width="100" height="10"></rect>
+                <rect y = "90" width="100" height="10"></rect>
+            </svg>
+        </div>
+        <div class="cursor-pointer hidden md:hidden" onclick="navClose()" id="closeBtn">
+            <h1 class="font-medium text-4xl lg:text-white">x</h1>
+        </div>
+    </div>
+    <div class="px-4 py-4 md:col-span-3 hidden lg:block  items-end" id="navLinks">
+        <li class="md:ml-8 list-none mb-2 md:inline-block md:px-6 "><a href="" class="text-gray-500 hover:text-green-500 text-xl">Home</a></li>
+        <li class="list-none mb-2 md:inline-block md:px-6 "><a href="" class="text-gray-500 hover:text-green-500 text-xl">Testimonials</a></li>
+        <li class="list-none mb-4 md:inline-block md:px-6 "><a href="" class="text-gray-500 hover:text-green-500 text-xl">Contact</a></li>
+        <a class="md:px-6 md:inline-block p-4 font-medium border-none text-white text-center bg-green-500 block mx-auto uppercase rounded">book an appointment</a>
+
+    </div>
+    </nav>
+    <section class="pt-12">
+    <div class="bg-green-500 px-12 py-32">
+        <p class="italic text-lg text-gray-100  text-center">info@primehealthsystems.com.ng</p>
+        <h1 class="text-4xl mt-4 text-gray-100  text-center font-bold ">+234-907-8810-948</h1>
+    </div>
+</section>
+    <section class="mt-10 px-4 md:px-20 py-8 md:grid md:grid-cols-2 md:gap-24">
+        <div class="md:col-span-1">
+        <h2 class="font-semibold text-2xl mb-8 md:pl-8">Send us an E-mail</h2>
+        <form action="" class="md:px-8">
+            <label for="" class="text-gray-500 text-lg block mb-1">Name:</label>
+                <input type="text" name="name" placeholder="Your name..." id="" class="h-12 w-full block rounded px-4 py-2 border-2 border-gray-500">
+                <label for=""  class="text-gray-500 text-lg block mb-1">Phone Number:</label>
+                <input type="password" name="phoneNo" id="" class="h-12 w-full block rounded px-4 py-2 border-2 border-gray-500" placeholder="Your phone number...">
+                <label for=""  class="text-gray-500 text-lg block mb-1">E-mail Address:</label>
+                <input type="email" name="name" id="" class="h-12 w-full block rounded px-4 py-2 border-2 border-gray-500" placeholder="Your email...">
+                <label for="" class="text-gray-500 text-lg block mb-1">Location:</label>
+                <input type="text" name="location" placeholder="Your name..." id="" class="h-12 w-full block rounded px-4 py-2 border-2 border-gray-500">
+                <label for="" class="text-gray-500 text-lg block mb-1" >Your Enquiry:</label>
+                <textarea name="enquiry" id="" cols="12" rows="10" class="w-full block rounded px-4 py-2 border-2 border-gray-500 mb-8" placeholder="Your Enquiry message"></textarea>
+                <button type="submit" class="uppercase px-8 py-2 border-2 border-green-500 hover:bg-green-500 hover:border-green-800 hover:text-white rounded">send</button>
+        </form>
+    </div>
+        <div class="border-2 px-4 py-8 bg-gray-200 mt-12 md:col-span-1">
+        <div class="py-8 px-4 bg-white rounded mt-2 md:col-span-1">
+            <h2 class="font-semibold text-center text-2xl mb-8">Opening Hours</h2>
+            <div class="pb-4 border-b-2 mt-2">
+                <h3 class="font-semibold uppercase">Monday</h3>
+                <p>8:00am - 11:00pm</p>
+            </div>
+            <div class="pb-4 border-b-2 mt-2">
+                <h3 class="font-semibold uppercase">Tuesday</h3>
+                <p>8:00am - 11:00pm</p>
+            </div>
+            <div class="pb-4 border-b-2 mt-2">
+                <h3 class="font-semibold uppercase">Wednesday</h3>
+                <p>8:00am - 11:00pm</p>
+            </div>
+            <div class="pb-4 border-b-2 mt-2">
+                <h3 class="font-semibold uppercase">Thursday</h3>
+                <p>8:00am - 11:00pm</p>
+            </div>
+            <div class="pb-4 border-b-2 mt-2">
+                <h3 class="font-semibold uppercase">friday</h3>
+                <p>8:00am - 11:00pm</p>
+            </div>
+            <div class="pb-4 border-b-2 mt-2">
+                <h3 class="font-semibold uppercase">Saturday</h3>
+                <p>8:00am - 11:00pm</p>
+            </div>
+            <div class="pb-4 mt-2">
+                <h3 class="font-semibold uppercase">Sunday</h3>
+                <p class="text-green-500 font-semibold">Closed</p>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="md:grid md:grid-cols-3">
+        <div class="px-20 py-12 w-full bg-purple-900 md:col-span-1">
+            <h1 class="uppercase text-2xl font-bold text-gray-100">-mahatma gandhi-</h1>
+            <p class="text-gray-100 mt-6 text-lg">"I will not let anyone walk through my mind with their dirty feet"</p>
+        </div>
+        <div class="px-20 py-12 w-full bg-green-600 md:col-span-1">
+            <h1 class="uppercase text-2xl font-bold text-gray-100">-leo tolstoy, anna karenina-</h1>
+            <p class="text-gray-100 mt-6 text-lg">"I think... if it is true that there are as many minds as there are heads, then there are as many kinds of love as there are hearts."</p>
+        </div>
+        <div class="px-20 py-12 w-full bg-red-500 md:col-span-1">
+            <h1 class="uppercase text-2xl font-bold text-gray-100">-friedrich nietzsche-</h1>
+            <p class="text-gray-100 mt-6 text-lg">"The snake which cannot cast its skin has to die. As well the minds which are prevented from changing their opinions; they cease to be mind."</p>
+        </div>
+    </section>
+    <section class="px-4 py-8 md:grid md:grid-cols-3  md:align-baseline  bg-green-500 text-white mt-4">
+        <div class="md:col-span-1">
+            <h3 class="text-2xl font-semibold mb-4">Subscribe to our Newsletter</h3>
+            <form action="">
+                <input type="email" class="h-12 w-full border-2 border-gray-500 px-4 rounded" placeholder="Your E-mail Address">
+                <button type="submit" class="uppercase  bg-white text-green-500 font-semibold rounded mt-2 flex px-8 py-2 mx-auto">Subscribe</button>
+            </form>
+        </div>
+        <div class="flex justify-around mt-8 md:col-span-2 md:justify-around">
+            <div >
+                <li class="list-none mb-4"><a href="#" class=" text-xl">- Home</a></li>
+                <li class="list-none"><a href="#" class=" text-xl ">- Testimonials</a></li>
+            </div>
+            <div>
+                <li class="list-none mb-4"><a href="#" class=" text-xl ">- Call Us</a></li>
+                <li class="list-none"><a href="#" class=" text-xl ">- Contact</a></li>
+            </div>
+        </div>
+    </section>
+    <section class="px-4 md:grid md:grid-cols-2 bg-green-500 text-white">
+        <div class="md:col-span-1">
+        <h3 class="font-semibold text-xl uppercase">call us:</h3>
+        <p class="md:text-lg mb-4">+234(0)9084572272</p>
+        <h3 class="font-semibold text-xl uppercase">send an e-mail</h3>
+        <p class="text-lg uppercase">info@fyin.com</p>
+    </div>
+    <div class="md:col-span-1">
+        <div>
+            <img src="" alt="">
+            <p class="font-semibold text-blue-500 text-lg">Like us</p>
+            <p class="text-blue-500">on Facebook</p>
+        </div>
+        <div>
+            <img src="./logos/instagram-glyph-1.svg" class="h-20 w-20" alt="">
+            <p class="font-semibold text-green-500 text-lg">Follow us</p>
+            <p class="text-red-500">on Instagram</p>
+        </div>
+    </div>
+    </section>
+</body>
+</html>
