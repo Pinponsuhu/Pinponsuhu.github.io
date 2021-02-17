@@ -1,0 +1,10 @@
+.practice{
+  
+    display: flex;
+    flex-direction: column-reverse;
+}
+.box{
+    background:red;
+    padding: 16px 24px;
+    font-size: 20px;
+}
