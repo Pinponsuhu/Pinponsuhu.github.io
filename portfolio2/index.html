@@ -5,15 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movi-x - Homepage</title>
     <link rel="stylesheet" href="cdn/tailwind.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
 </head>
-<body class="bg-black text-gray-100 w-screen">     
+<body  class="bg-black text-gray-100 w-screen" id="particles-js">     
     <nav class="flex mt-2 overflow-x-hidden md:ml-12">
-        <h1 class=" font-bold text-3xl text-red-500 ml-4">Movi-x<span class="text-green-600 text-3xl">.</span></h1>
-        <div class="">
-            <input type="text" name="" id="" class="text-red-600 ml-4 px-4 w-48 md:w-72 h-12 rounded-lg" placeholder="Search movie name">
+        <h1 class=" font-bold text-2xl text-red-500 ml-2">Movi-x<span class="text-green-600 text-3xl">.</span></h1>
+        <div class="" id="resultSec">
+            <input type="text" name="" onchange="load()" id="searchField" class="text-red-600 ml-2 px-2 w-40 md:w-72 h-12 rounded-lg" placeholder="Search movie name">
+
         </div>
     </nav>
-   <main class=" box-border w-screen md:grid md:grid-cols-2 lg:grid-cols-3">
+   <main id="mainSec"  class=" box-border w-screen md:grid md:grid-cols-2 lg:grid-cols-3">
    </main>
 </body>
 </html>
