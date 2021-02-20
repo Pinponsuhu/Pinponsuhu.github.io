@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Newsreader&display=swap');
+*{
+    box-sizing:border-box;
+}
 body{
     padding: 0;
     margin:0;
@@ -12,12 +15,12 @@ body{
     background: #ffffff;
     z-index: 99999999;
     width:100%;
-    height:70px;
+    height:64px;
     box-shadow: 0 0 4px gray;
 }
 #webName{
     color:#e76f51;
-    letter-spacing: -1px;
+    letter-spacing: -2px;
     font-size: 28px;
 }
 #webName span{
