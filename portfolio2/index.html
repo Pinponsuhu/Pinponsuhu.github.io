@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movi-x - Homepage</title>
-    <link rel="stylesheet" href="cdn/tailwind.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="app.js"></script>
 </head>
-<body  class="bg-black text-gray-100 w-screen" id="particles-js">     
-    <nav class="flex mt-2 overflow-x-hidden md:ml-12">
-        <h1 class=" font-bold text-2xl text-red-500 ml-2">Movi-x<span class="text-green-600 text-3xl">.</span></h1>
-        <div class="" id="resultSec">
-            <input type="text" name="" oninput="load()" id="searchField" class="text-red-600 ml-2 px-2 w-48 md:w-72 h-12 rounded-lg" placeholder="Search movie name">
-
-        </div>
-    </nav>
-   <main id="mainSec"  class=" box-border w-screen md:grid md:grid-cols-2 lg:grid-cols-3">
+<body>  
+   <nav id="navSec">
+       <h1 id="webName"><i class="fa fa-video"></i>Movie<span>dium</span></h1>
+   </nav>
+   <main class="mainSec" id="mainSec">
+       <input type="text" name="" id="movieName" placeholder="Search movie name">
+       <button id="searchBtn" onclick="load(); search()">Search</button>
    </main>
+   <footer class="footSec">Design by Pinponsuhu Joseph</footer>
+   <section id="errModal">
+       <p>Movie name cannot be empty</p>
+       <button type="submit" id="closeBtn" onclick="clsModal()">close</button>
+   </section>
 </body>
 </html>
