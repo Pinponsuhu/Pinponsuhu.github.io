@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/header.ejs') %> 
+<body class=" bg-gray-100">
+    <%- include('../partials/nav.ejs') %> 
+    <main class="mt-16 pt-1">
+        <h1 class="text-center text-3xl font-medium my-4">Create blog</h1>
+        <form action="/gist" method="POST" class="w-72 mx-auto md:w-96">
+            <input type="text" name="blogTitle" id="" class="w-72 md:w-96 h-12 rounded-md mt-2 px-4  border-2 border-blue-400" placeholder="Blog title" required>
+            <input type="text" name="blogAuthor" id="" class="w-72 md:w-96 h-12 rounded-md mt-2 px-4  border-2 border-blue-400" placeholder="Blog author" required>
+            <textarea name="blogBody" id="" cols="30" rows="10" class="w-72 md:w-96 border-2 border-blue-400 rounded-md mt-2 px-4 " placeholder="Blog message" required></textarea>
+            <button class="bg-blue-400 text-white rounded-md text-center px-8 py-2">Submit</button>
+        </form>
+        
+    </main>
+    <%- include('../partials/footer.ejs') %> 
+</body>
+</html>
