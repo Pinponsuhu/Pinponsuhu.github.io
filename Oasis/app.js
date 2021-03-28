@@ -8,12 +8,6 @@ app.set('views','pages');
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended : true }));
 
-app.get('/',(req,res)=>{
-    res.render('index');
-});
-app.get('/create',(req,res)=>{
-    res.render('create');
-});
-app.get('/about',(req,res)=>{
-    res.render('about');
-});
+const routes = require('./routes/routes');
+
+app.use( '/', routes);
