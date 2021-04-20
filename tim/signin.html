@@ -5,27 +5,49 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>QuickInsure - Home page</title>
+  <script src="./js/main.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.3/tailwind.min.css">
 </head>
 <body class="bg-gray-100">
-  <div class="p-4 bg-white shadow-md grid grid-cols-2 items-center mb-4">
-    <h1 class="text-purple-500 text-3xl font-bold col-span-1">QuickInsure</h1>
-    <ul class="flex col-span-1 justify-around">
-      <li><a href="#">About</a></li>
-      <li><a href="/signin.html">Sign In</a></li>
+  <div class=" p-4 bg-white shadow-md md:grid md:grid-cols-2  items-center mb-4">
+    <div class="grid grid-cols-2 md:col-span-1">
+      <h1 class="text-black text-3xl font-bold col-span-1 cursor-pointer"><a href="index.html">QuickInsure</a> </h1>
+      <h1 id="mobileBtn" onclick="mobileNav()" class="md:invisible text-3xl text-black col-span-1 text-right cursor-pointer">☲</h1>
+    </div>
+
+    <!-- DESKTOP SCREEN MENU-->
+
+    <ul class="hidden text-lg md:flex md:col-span-1 flex col-span-1 justify-around">
+      <li><a href="/about.html">About</a></li>
+      <li class="text-black border-b-2 border-black"><a href="/signin.html">Sign In</a></li>
       <li><a href="/signup.html">Sign Up</a></li>
     </ul>
-  </div>
+     </div>
+
+    <!-- MOBILE SCREEN MENU-->
+     <div class="absolute md:w-0 top-1/3 md:h-0 md:overflow-none w-full">
+      <ul id="mobileNav" class="relative hidden md:w-0 md:h-0 flex-col w-80 mx-auto md:px-0 md:py-0 px-6 py-8 rounded-md bg-gray-600 shadow-md text-xl text-white">
+        <li class="mx-auto my-3"><a href="/about.html">About</a></li>
+        <li class="mx-auto my-3"><a href="/signin.html">Sign In</a></li>
+        <li class="mx-auto my-3"><a href="/signup.html">Sign Up</a></li>
+      </ul>
+     </div>
   <div class="body px-12 md:px-28 mt-18">
-    <form action="" class="mt-24">
-        <h1 class="mb-4 text-2xl text-purple-500 text-center font-bold">Sign In</h1>
-        <input type="email" name="email" id="email" class="border-2 border-purple-500 px-2 py-3 block mx-auto w-72 rounded mb-2" placeholder="Enter your email">
-        <input type="password" name="passwrd" id="passwrd" class="border-2 border-purple-500 px-2 py-3 block mx-auto w-72 rounded mb-2" placeholder="Enter your password">
-        <input type="submit" value="Submit" class="block px-6 py-2 bg-purple-500 rounded text-white mx-auto">
+    <form action="" class="md:px-20 lg:px-48 mt-4 md:grid md:grid-cols-2 md:gap-x-14 w-80 md:w-full mx-auto">
+        <h1 class="col-span-2 my-2 text-3xl text-black text-center font-bold">Sign In</h1>
+        <div class="md:col-span-1">
+          <label for="email" class="block font-medium text-md my-2">Email</label>
+        <input type="email" name="email" id="email" class="w-72 sm:80 w-full block h-14 px-2 text-md border-2 border-black rounded-md" placeholder="Enter your email">
+      </div>
+      <div class="md:col-span-1">
+        <label for="password" class="block font-medium text-md my-2">Password</label>
+        <input type="password" name="passwrd" id="passwrd" class="w-72 sm:80 w-full block h-14 px-2 text-md border-2 border-black rounded-md" placeholder="Enter your password">
+      </div>
+        <input type="submit" value="Submit" class="text-white w-28 rounded-md block col-span-2 bg-black mt-6 shadow-md h-12 mx-auto">
     </form>
   </div>
-  <div class="footer p-2 shadow-sm absolute bottom-0 left-1/4 ">
-    <p class="text-gray-600 text-center">Copyright Fashina Timothy 2020</p>
+  <div class="footer p-2 shadow-sm absolute bottom-0 w-full bg-white">
+    <p class="text-gray-600 text-center relative">Copyright Fashina Timothy 2020</p>
   </div>
 </body>
 </html>

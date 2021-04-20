@@ -33,3 +33,15 @@ function insure(){
       }
   
 }
+
+function mobileNav(){
+  if(document.getElementById('mobileBtn').innerHTML == "☲"){
+    document.getElementById('mobileNav').style.display= "flex";
+    document.getElementById('mobileBtn').innerHTML = "⛌";
+  }
+  else{
+    document.getElementById('mobileNav').style.display= "none";
+    document.getElementById('mobileBtn').innerHTML = "☲";
+    
+  }
+}

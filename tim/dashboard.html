@@ -5,23 +5,38 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>QuickInsure - Home page</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.3/tailwind.min.css">
   <script src="./js/main.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.3/tailwind.min.css">
 </head>
 <body class="bg-gray-100">
-  <div class="p-4 bg-white shadow-md grid grid-cols-2 items-center mb-4">
-    <h1 class="text-purple-500 text-3xl font-bold col-span-1">QuickInsure</h1>
-    <ul class="flex col-span-1 justify-around">
-      <li class="px-2 py-2"><a href="#">About</a></li>
-      <li class="px-2 py-2"><a href="#" class="text-purple-500 font-medium">Fashina ...</a></li>
-      <li class="bg-purple-500 px-2 py-2 rounded text-white"><a href="#">Sign Out</a></li>
+  <div class=" p-4 bg-white shadow-md md:grid md:grid-cols-2  items-center mb-4">
+    <div class="grid grid-cols-2 md:col-span-1">
+      <h1 class="text-black text-3xl font-bold col-span-1 cursor-pointer"><a href="/index.html">QuickInsure</a></h1>
+      <h1 id="mobileBtn" onclick="mobileNav()" class="md:invisible text-3xl text-black col-span-1 text-right cursor-pointer">☲</h1>
+    </div>
+
+    <!-- DESKTOP SCREEN MENU-->
+
+    <ul class="hidden text-lg md:flex md:col-span-1 flex col-span-1 justify-around">
+      <li ><a href="/about.html">About</a></li>
+      <li class="font-medium text-black"><a href="/profile.html">Fashina...</a></li>
+      <li><a href="/signup.html">Logout</a></li>
     </ul>
-  </div>
+     </div>
+
+    <!-- MOBILE SCREEN MENU-->
+     <div class="absolute md:w-0 top-1/3 md:h-0 md:overflow-none w-full">
+      <ul id="mobileNav" class="relative hidden md:w-0 md:h-0 flex-col w-80 mx-auto md:px-0 md:py-0 px-6 py-8 rounded-md bg-gray-600 text-xl text-white shadow-md">
+        <li class="mx-auto my-3"><a href="/about.html">About</a></li>
+        <li class="mx-auto my-3"><a href="/profile.html">Fashina...</a></li>
+        <li class="mx-auto my-3"><a href="#">Logout</a></li>
+      </ul>
+     </div>
   <div class="body px-6 md:px-10 mt-2">
-    <div onclick="formdisp()" id="addbtn" class=" hover:bg-purple-600 cursor-pointer rounded-full bg-purple-500 shadow-md p-4 mx-auto w-20 h-20 text-4xl text-center text-white mt-24 font-bold">+</div>
+    <div onclick="formdisp()" id="addbtn" class=" cursor-pointer rounded-full bg-black shadow-md p-4 mx-auto w-20 h-20 text-4xl text-center text-white mt-24 font-bold">+</div>
   </div>
   <div class="hidden" id="forms">
-    <select name="" id="insureType" class="border-2 border-purple-500 px-2 py-3 block mx-auto w-80 rounded mb-10" onchange="insure()">
+    <select name="" id="insureType" class="border-2 border-black px-2 py-3 block mx-auto w-80 rounded mb-10" onchange="insure()">
       <option value="1">--Select Insurance Type--</option>
       <option value="2">Life Insurance</option>
       <option value="3">Medical Insurance</option>
@@ -29,39 +44,39 @@
       <option value="5">Car Insurance</option>
     </select>
       <form action="" id="life" class="mt-18 hidden">
-        <h1 class="text-3xl font-bold text-purple-500 text-center mb-8">Life Insurance</h1>
-      <input type="text" name="NofKlyf" id="lifeInsure" placeholder="Next of kin" class="border-2 border-purple-500 px-2 py-3 block mx-auto w-80 rounded mb-2">
-      <input type="text" name="addNofKlyf" id="" placeholder="Address of next of kin" class="border-2 border-purple-500 px-2 py-3 block mx-auto w-80 rounded mb-2">
-      <input type="text" name="BankInfolyf" id="" placeholder="Bank information" class="border-2 border-purple-500 px-2 py-3 block mx-auto w-80 rounded mb-2">
-      <input type="text" name="asstLyf" id="" placeholder="Asset worth" class="border-2 border-purple-500 px-2 py-3 block mx-auto w-80 rounded mb-2">
-      <input type="submit" value="Submit" class="block px-6 py-2 bg-purple-500 rounded text-white mx-auto">
+        <h1 class="text-3xl font-bold text-black text-center mb-8">Life Insurance</h1>
+      <input type="text" name="NofKlyf" id="lifeInsure" placeholder="Next of kin" class="border-2 border-black px-2 py-3 block mx-auto w-80 rounded mb-2">
+      <input type="text" name="addNofKlyf" id="" placeholder="Address of next of kin" class="border-2 border-black px-2 py-3 block mx-auto w-80 rounded mb-2">
+      <input type="text" name="BankInfolyf" id="" placeholder="Bank information" class="border-2 border-black px-2 py-3 block mx-auto w-80 rounded mb-2">
+      <input type="text" name="asstLyf" id="" placeholder="Asset worth" class="border-2 border-black px-2 py-3 block mx-auto w-80 rounded mb-2">
+      <input type="submit" value="Submit" class="block px-6 py-2 bg-black rounded text-white mx-auto">
     </form>
     <form action="" id="Medical" class="mt-18 hidden">
-      <h1 class="text-3xl font-bold text-purple-500 text-center mb-8">Medical Insurance</h1>
-    <input type="text" name="NameDrMed" id="lifeInsure" placeholder="Name of doctor" class="border-2 border-purple-500 px-2 py-3 block mx-auto w-80 rounded mb-2">
-    <input type="text" name="NamePatMed" id="" placeholder="Name of patient" class="border-2 border-purple-500 px-2 py-3 block mx-auto w-80 rounded mb-2">
-    <input type="text" name="SickDiaMed" id="" placeholder="Sickness Diagnosis" class="border-2 border-purple-500 px-2 py-3 block mx-auto w-80 rounded mb-2">
-    <input type="text" name="TreatMed" id="" placeholder="Treatment" class="border-2 border-purple-500 px-2 py-3 block mx-auto w-80 rounded mb-2">
-    <input type="submit" value="Submit" class="block px-6 py-2 bg-purple-500 rounded text-white mx-auto">
+      <h1 class="text-3xl font-bold text-black text-center mb-8">Medical Insurance</h1>
+    <input type="text" name="NameDrMed" id="lifeInsure" placeholder="Name of doctor" class="border-2 border-black px-2 py-3 block mx-auto w-80 rounded mb-2">
+    <input type="text" name="NamePatMed" id="" placeholder="Name of patient" class="border-2 border-black px-2 py-3 block mx-auto w-80 rounded mb-2">
+    <input type="text" name="SickDiaMed" id="" placeholder="Sickness Diagnosis" class="border-2 border-black px-2 py-3 block mx-auto w-80 rounded mb-2">
+    <input type="text" name="TreatMed" id="" placeholder="Treatment" class="border-2 border-black px-2 py-3 block mx-auto w-80 rounded mb-2">
+    <input type="submit" value="Submit" class="block px-6 py-2 bg-black rounded text-white mx-auto">
   </form>
   <form action="" id="Property" class="mt-18 hidden">
-    <h1 class="text-3xl font-bold text-purple-500 text-center mb-8">Property Insurance</h1>
-  <input type="text" name="propList" id="lifeInsure" placeholder="Property List" class="border-2 border-purple-500 px-2 py-3 block mx-auto w-80 rounded mb-2">
-  <input type="text" name="zipcode" id="" placeholder="Zip code" class="border-2 border-purple-500 px-2 py-3 block mx-auto w-80 rounded mb-2">
-  <input type="text" name="compVer" id="" placeholder="Company verifier" class="border-2 border-purple-500 px-2 py-3 block mx-auto w-80 rounded mb-2">
-  <input type="text" name="AddProp" id="" placeholder="Property address" class="border-2 border-purple-500 px-2 py-3 block mx-auto w-80 rounded mb-2">
-  <input type="submit" value="Submit" class="block px-6 py-2 bg-purple-500 rounded text-white mx-auto">
+    <h1 class="text-3xl font-bold text-black text-center mb-8">Property Insurance</h1>
+  <input type="text" name="propList" id="lifeInsure" placeholder="Property List" class="border-2 border-black px-2 py-3 block mx-auto w-80 rounded mb-2">
+  <input type="text" name="zipcode" id="" placeholder="Zip code" class="border-2 border-black px-2 py-3 block mx-auto w-80 rounded mb-2">
+  <input type="text" name="compVer" id="" placeholder="Company verifier" class="border-2 border-black px-2 py-3 block mx-auto w-80 rounded mb-2">
+  <input type="text" name="AddProp" id="" placeholder="Property address" class="border-2 border-black px-2 py-3 block mx-auto w-80 rounded mb-2">
+  <input type="submit" value="Submit" class="block px-6 py-2 bg-black rounded text-white mx-auto">
 </form>
 <form action="" id="Car" class="mt-18 hidden">
-  <h1 class="text-3xl font-bold text-purple-500 text-center mb-8">Car Insurance</h1>
-<input type="text" name="licenseNo" id="lifeInsure" placeholder="License No" class="border-2 border-purple-500 px-2 py-3 block mx-auto w-80 rounded mb-2">
-<input type="text" name="LicenseHeld" id="" placeholder="License Held" class="border-2 border-purple-500 px-2 py-3 block mx-auto w-80 rounded mb-2">
-<input type="text" name="CarType" id="" placeholder="Car Type" class="border-2 border-purple-500 px-2 py-3 block mx-auto w-80 rounded mb-2">
-<input type="submit" value="Submit" class="block px-6 py-2 bg-purple-500 rounded text-white mx-auto">
+  <h1 class="text-3xl font-bold text-black text-center mb-8">Car Insurance</h1>
+<input type="text" name="licenseNo" id="lifeInsure" placeholder="License No" class="border-2 border-black px-2 py-3 block mx-auto w-80 rounded mb-2">
+<input type="text" name="LicenseHeld" id="" placeholder="License Held" class="border-2 border-black px-2 py-3 block mx-auto w-80 rounded mb-2">
+<input type="text" name="CarType" id="" placeholder="Car Type" class="border-2 border-black px-2 py-3 block mx-auto w-80 rounded mb-2">
+<input type="submit" value="Submit" class="block px-6 py-2 bg-black rounded text-white mx-auto">
 </form>
   </div>
-  <div class="footer p-2 shadow-sm absolute bottom-0 left-1/4 ">
-    <p class="text-gray-600 text-center">Copyright Fashina Timothy 2020</p>
+  <div class="footer p-2 shadow-sm fixed bottom-0 w-full bg-white">
+    <p class="text-gray-600 text-center relative">Copyright Fashina Timothy 2020</p>
   </div>
 </body>
 </html>

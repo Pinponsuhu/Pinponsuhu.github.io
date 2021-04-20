@@ -5,37 +5,58 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>QuickInsure - Home page</title>
+  <script src="./js/main.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.3/tailwind.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body class="bg-gray-100">
-  <div class="md:p-4 px-1 py-4 bg-white shadow-md grid grid-cols-2 items-center mb-8 ">
-    <h1 class="text-purple-500 text-2xl md:text-3xl font-bold col-span-1">QuickInsure</h1>
-    <ul class="flex col-span-1 justify-around">
-      <li><a href="#">About</a></li>
+  <div class=" p-4 bg-white shadow-md md:grid md:grid-cols-2  items-center mb-4">
+    <div class="grid grid-cols-2 md:col-span-1">
+      <h1 class=" text-3xl font-bold col-span-1 cursor-pointer"><a href="index.html">QuickInsure</a> </h1>
+      <h1 id="mobileBtn" onclick="mobileNav()" class="md:invisible text-3xl col-span-1 text-right cursor-pointer">☲</h1>
+    </div>
+
+    <!-- DESKTOP SCREEN MENU-->
+
+    <ul class="hidden text-lg md:flex md:col-span-1 flex col-span-1 justify-around">
+      <li><a href="/about.html">About</a></li>
       <li><a href="/signin.html">Sign In</a></li>
       <li><a href="/signup.html">Sign Up</a></li>
     </ul>
-  </div>
-  <div class="body px-4 md:px-28 md:grid md:grid-cols-2 md:gap-4">
-    <div class="bg-purple-500 p-6 rounded text-white shadow-sm mb-4  md:col-span-1">
+     </div>
+
+    <!-- MOBILE SCREEN MENU-->
+     <div class="absolute md:w-0 top-1/3 md:h-0 md:overflow-none w-full">
+      <ul id="mobileNav" class="relative hidden md:w-0 md:h-0 flex-col w-80 mx-auto md:px-0 md:py-0 px-6 py-8 rounded-md bg-gray-600 z-50 text-xl text-white">
+        <li class="mx-auto my-3"><a href="/about.html">About</a></li>
+        <li class="mx-auto my-3"><a href="/signin.html">Sign In</a></li>
+        <li class="mx-auto my-3"><a href="/signup.html">Sign Up</a></li>
+      </ul>
+     </div>
+  <div class="body px-4 md:px-16 md:grid md:grid-cols-2 md:gap-x-12 mt-6">
+    <div class="bg-black px-6 py-8 rounded text-white shadow-sm mb-6  md:col-span-1">
+      <h1 class="text-center"><i class="animate-pulse fa fa-heartbeat text-white text-6xl"></i></h1>
       <h1 class="text-2xl font-bold text-center ">Life Insurance</h1>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut cupiditate id temporibus eveniet, neque nisi labore sunt saepe blanditiis deserunt, voluptatum ipsa ducimus, odio ab optio dolores cum officia unde.</p>  
     </div>
-    <div class="bg-purple-500 p-6 rounded text-white shadow-sm mb-4 md:col-span-1">
+    <div class="bg-black px-6 py-8 rounded text-white shadow-sm mb-6 md:col-span-1">
+      <h1 class="text-center"><i class="animate-pulse fa fa-plus text-white text-6xl"></i></h1>
       <h1 class="text-2xl font-bold text-center">Health Insurance</h1>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius quae quisquam, nisi officia sunt at. Consequatur, libero unde rerum hic accusantium possimus facilis sequi harum voluptatum, quibusdam voluptatem et illo!</p>
     </div>
-    <div class="bg-purple-500 p-6 rounded text-white shadow-sm mb-6 md:col-span-1">
+    <div class="bg-black p-6 rounded text-white shadow-sm mb-6 md:col-span-1 md:mt-4">
+      <h1 class="text-center"><i class="animate-pulse fa fa-home text-white text-6xl"></i></h1>
       <h1 class="text-2xl font-bold text-center">Property Insurance</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim molestiae tempora inventore ducimus modi sint aspernatur natus quaerat, nobis, numquam, nemo dicta ea rerum possimus voluptate. Debitis dolore fugiat suscipit!</p>  
     </div>
-    <div class="bg-purple-500 p-6 rounded text-white shadow-sm mb-6 md:col-span-1">
+    <div class="bg-black p-6 rounded text-white shadow-sm mb-6 md:mt-4 md:col-span-1">
+      <h1 class="text-center"><i class="animate-pulse fa fa-car text-white text-6xl"></i></h1>
       <h1 class="text-2xl font-bold text-center">Car Insurance</h1>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga nemo ipsum doloremque quos quo, alias architecto minima? Sit, eos eum cumque, expedita nemo dolorum est, consectetur perferendis dolor praesentium amet.</p>
     </div>
   </div>
-  <div class="footer p-2 shadow-sm absolute bottom-0 left-1/4 ">
-    <p class="text-gray-600 text-center">Copyright Fashina Timothy 2020</p>
+  <div class="footer p-2 shadow-sm fixed bottom-0 w-full bg-white">
+    <p class="text-gray-600 text-center relative">Copyright Fashina Timothy 2020</p>
   </div>
 </body>
 </html>
